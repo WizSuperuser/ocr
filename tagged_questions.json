@@ -1,0 +1,780 @@
+Okay, I'm ready to process the provided markdown file (which you haven't provided yet). I'll assume it contains JEE-Main 2025 January exam questions. I will parse the document, identify question-solution pairs, extract relevant information, and create the JSON representation you requested for 10 pairs.
+
+**Important Notes:**
+
+*   **Markdown Processing:** I will preserve the markdown formatting as much as possible within the "question" and "solution" fields. This includes things like bold text, italics, lists, code blocks, and LaTeX equations.
+*   **Option Extraction:** I will attempt to identify the multiple-choice options (option-1, option-2, option-3, option-4, option-5) and the correct option.  The method of identifying these will depend on the format of the markdown.  I will use pattern matching (e.g., A. ..., B. ..., etc., or numbered options) to extract options.
+*   **Subject and Topic/Techniques:** This is where it gets a little complex without the actual file. I will **guess** the "subject" (math, physics, chemistry) based on the question content.  The "topic" and "techniques" will be based on my understanding of JEE syllabus and the question's content.  This might be a little inaccurate without the file to process.
+*   **Error Handling:** If I encounter a formatting problem that prevents me from fully parsing the content, I will do my best to provide a reasonable JSON output, even if the information is incomplete (e.g., missing some fields).  I will indicate that information is missing where it's applicable.
+*   **File Content Dependency:** I will update the JSON structure to reflect the actual format of the questions, options, and solutions in your provided file.
+
+**Example Output Structure (for ONE question-solution pair):**
+
+```json
+{
+    "question": "What is the value of $\\int_0^1 x^2 dx$?",
+    "solution": "The integral of $x^2$ is $\\frac{x^3}{3}$.  Evaluating from 0 to 1 gives $\\frac{1^3}{3} - \\frac{0^3}{3} = \\frac{1}{3}$.",
+    "option-1": "1/3",
+    "option-2": "1/2",
+    "option-3": "1",
+    "option-4": "2/3",
+    "correct-option": "1",
+    "subject": "math",
+    "topic": ["integration", "calculus"],
+    "techniques": ["definite integral", "power rule"]
+}
+```
+
+**JSON output for 10 question-solution pairs (will be populated once you provide the markdown file):**
+
+```json
+[
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    },
+    {
+        "question": null,
+        "solution": null,
+        "option-1": null,
+        "option-2": null,
+        "option-3": null,
+        "option-4": null,
+        "option-5": null,
+        "correct-option": null,
+        "subject": null,
+        "topic": null,
+        "techniques": null
+    }
+]
+```
+
+**Now, please provide the markdown file content.** I'm ready to process it! Just paste the content here.
+```json
+[
+  {
+    "question": "1. The number of non-empty equivalence relations on the set $\{1,2,3\}$ is :\n(1) 6\n(2) 7\n(3) 5\n(4) 4",
+    "solution": "Sol. Let R be the required relation\n$\\mathrm{A}=\\{(1,1)(2,2),(3,3)\\}$\n(i) $|\\mathrm{R}|=3$, when $\\mathrm{R}=\\mathrm{A}$\n(ii) $|\\mathrm{R}|=5$, e.g. $\\mathrm{R}=\\mathrm{A} \\cup \\{(1,2),(2,1)\\}$\n\nNumber of R can be [3]\n(iii) $\\mathrm{R}=\\{1,2,3\} \\times\\{1,2,3\\}$\n\nAns. (5)",
+    "option-1": "6",
+    "option-2": "7",
+    "option-3": "5",
+    "option-4": "4",
+    "correct-option": "3",
+    "subject": "math",
+    "topic": ["relations and functions"],
+    "techniques": ["set theory"]
+  },
+  {
+    "question": "2. Let $f: \\mathbf{R} \\rightarrow \\mathbf{R}$ be a twice differentiable function such that $f(\\mathrm{x}+\\mathrm{y})=f(\\mathrm{x}) f(\\mathrm{y})$ for all $\\mathrm{x}, \\mathrm{y} \\in \\mathbf{R}$. If $f^{\\prime}(0)=4 \\mathrm{a}$ and $f$ staisfies $f^{\\prime \\prime}(\\mathrm{x})-3 \\mathrm{a} f^{\\prime}(\\mathrm{x})-f(\\mathrm{x})=0$, $\\mathrm{a}>0$, then the area of the region\n$\\mathrm{R}=\\{\\mathrm{x}, \\mathrm{y}) \\mid 0 \\leq \\mathrm{y} \\leq f(\\mathrm{ax}), 0 \\leq \\mathrm{x} \\leq 2\\}$ is :\n(1) $e^{2}-1$\n(2) $e^{4}+1$\n(3) $e^{4}-1$\n(4) $e^{2}+1$",
+    "solution": "Sol. $f(x+y)=f(x) . f(y)$\n$\\Rightarrow \\mathrm{f}(\\mathrm{x})=\\mathrm{e}^{\\lambda \\mathrm{x}} \\mathrm{f}^{\\prime}(0)=4 \\mathrm{a}$\n$\\Rightarrow \\mathrm{f}^{\\prime}(\\mathrm{x})=\\lambda \\mathrm{e}^{\\lambda \\mathrm{x}} \\Rightarrow \\lambda=4 \\mathrm{a}$\nSo, $f(x)=e^{4 x}$\n$f^{\\prime \\prime}(x)-3 a f^{\\prime}(x)-f(x)=0$\n$\\Rightarrow \\lambda^{2}-3 \\mathrm{a} \\lambda-1=0$\n$\\Rightarrow 16 \\mathrm{a}^{2}-12 \\mathrm{a}^{2}-1=0 \\Rightarrow 4 \\mathrm{a}^{2}=1 \\Rightarrow \\mathrm{a}=\\frac{1}{2}$\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-01.jpg?height=341&width=461&top_left_y=2171&top_left_x=221)\n$F(x)=e^{2 x}$\nArea $=\\int_{0}^{2} \\mathrm{e}^{\\mathrm{x}} \\mathrm{dx}=\\mathrm{e}^{2}-1$",
+    "option-1": "$e^{2}-1$",
+    "option-2": "$e^{4}+1$",
+    "option-3": "$e^{4}-1$",
+    "option-4": "$e^{2}+1$",
+    "correct-option": "1",
+    "subject": "math",
+    "topic": ["differential equations", "integration"],
+    "techniques": ["solving differential equations", "definite integral"]
+  },
+  {
+    "question": "3. Let the triangle PQR be the image of the triangle with vertices $(1,3),(3,1)$ and $(2,4)$ in the line $x+2 y=2$. If the centroid of $\\triangle P Q R$ is the point $(\\alpha, \\beta)$, then $15(\\alpha-\\beta)$ is equal to :\n(1) 24\n(2) 19\n(3) 21\n(4) 22",
+    "solution": "Sol. Let 'G' be the centroid of $\\Delta$ formed by $(1,3)(3,1) & (2,4)$\n$\\mathrm{G} \\cong\\left(2, \\frac{8}{3}\\right)$\nImage of G w.r.t. $x+2 y-2=0$\n$\\frac{\\alpha-2}{1}=\\frac{\\beta-\\frac{8}{3}}{2}=-2 \\frac{\\left(2+\\frac{16}{3}-2\\right)}{1+4}$\n$=\\frac{-2}{5}\\left(\\frac{16}{3}\\right)$\n$\\Rightarrow \\alpha=\\frac{-32}{15}+2=\\frac{-2}{15}, \\beta=\\frac{-32 \\times 2}{15}+\\frac{8}{3}=\\frac{-24}{15}$\n$15(\\alpha-\\beta)=-2+24=22$",
+    "option-1": "24",
+    "option-2": "19",
+    "option-3": "21",
+    "option-4": "22",
+    "correct-option": "4",
+    "subject": "math",
+    "topic": ["coordinate geometry"],
+    "techniques": ["centroid", "reflection"]
+  },
+  {
+    "question": "4. Let $\\mathrm{z}_{1}, \\mathrm{z}_{2}$ and $\\mathrm{z}_{3}$ be three complex numbers on the circle $|z|=1$ with $\\arg \\left(z_{1}\\right)=\\frac{-\\pi}{4}, \\arg \\left(z_{2}\\right)=0$ and $\\arg \\left(z_{3}\\right)=\\frac{\\pi}{4}$. If $\\left|z_{1} \\bar{z}_{2}+z_{2} \\bar{z}_{3}+z_{3} \\bar{z}_{1}\\right|^{2}=\\alpha+\\beta \\sqrt{2}, \\alpha, \\beta \\in Z$, then the value of $\\alpha^{2}+\\beta^{2}$ is :\n(1) 24\n(2) 41\n(3) 31\n(4) 29",
+    "solution": "Sol. $Z_{1}=e^{-i \\pi / 4}, Z_{2}=1, Z_{3}=e^{i \\pi / 4}$\n$\\left|z_{1} \\bar{z}_{2}+z_{2} \\bar{z}_{3}+z_{3} \\bar{z}_{1}\\right|^{2}=\\left|e^{-i \\frac{\\pi}{4}} \\times 1+1 \\times e^{-i \\frac{\\pi}{4}}+e^{i \\frac{\\pi}{4}} \\times e^{i \\frac{\\pi}{4}}\\right|^{2}$\n$\\left|e^{-i \\frac{\\pi}{4}}+e^{-i \\frac{\\pi}{4}}+e^{i \\frac{\\pi}{4}}\\right|^{2}$\n$=\\left|2 e^{-i \\frac{\\pi}{4}}+\\mathrm{i}\\right|^{2}==|\\sqrt{2}-\\sqrt{2} \\mathrm{i}+\\mathrm{i}|^{2}$\n$=(\\sqrt{2})^{2}+(1-\\sqrt{2})^{2}=2+1+2-2 \\sqrt{2}=5-2 \\sqrt{2}$\n$\\alpha=5, \\beta=-2$\n$\\Rightarrow \\alpha^{2}+\\beta^{2}=29$",
+    "option-1": "24",
+    "option-2": "41",
+    "option-3": "31",
+    "option-4": "29",
+    "correct-option": "4",
+    "subject": "math",
+    "topic": ["complex numbers"],
+    "techniques": ["complex number arithmetic", "modulus"]
+  },
+  {
+    "question": "5. Using the principal values of the inverse trigonometric functions the sum of the maximum and the minimum values of $16\\left(\\left(\\sec ^{-1} \\mathrm{x}\\right)^{2}+\\left(\\operatorname{cosec}^{-1} \\mathrm{x}\\right)^{2}\\right)$ is :\n(1) $24 \\pi^{2}$\n(2) $18 \\pi^{2}$\n(3) $31 \\pi^{2}$\n(4) $22 \\pi^{2}$",
+    "solution": "Sol. $\\quad 16\\left(\\sec ^{-1} \\mathrm{x}\\right)^{2}+\\left(\\operatorname{cosec}^{-1} \\mathrm{x}\\right)^{2}$\n$\\operatorname{Sec}^{-1} \\mathrm{x}=\\mathrm{a} \\in[0, \\pi]-\\left\\{\\frac{\\pi}{2}\\right\\}$\n$\\operatorname{cosec}^{-1} x=\\frac{\\pi}{2}-a$\n$=16\\left[a^{2}+\\left(\\frac{\\pi}{2}-a\\right)^{2}\\right]=16\\left[2 a^{2}-\\pi a+\\frac{\\pi^{2}}{4}\\right]$\n$\\max ]_{a=\\pi}=16\\left[2 \\pi^{2}-\\pi^{2}+\\pi \\frac{2}{4}\\right]=20 \\pi^{2}$\n$\\min ]_{a=\\frac{\\pi}{4}}=16\\left[\\frac{2 \\times \\pi^{2}}{16}-\\frac{\\pi^{2}}{4}+\\frac{\\pi^{2}}{4}\\right]=2 \\pi^{2}$\nSum $=22 \\pi^{2}$",
+    "option-1": "$24 \\pi^{2}$",
+    "option-2": "$18 \\pi^{2}$",
+    "option-3": "$31 \\pi^{2}$",
+    "option-4": "$22 \\pi^{2}$",
+    "correct-option": "4",
+    "subject": "math",
+    "topic": ["inverse trigonometric functions"],
+    "techniques": ["trigonometric identities"]
+  },
+  {
+    "question": "6. A coin is tossed three times. Let $X$ denote the number of times a tail follows a head. If $\\mu$ and $\\sigma^{2}$ denote the mean and variance of $X$, then the value of $64\\left(\\mu+\\sigma^{2}\\right)$ is :\n(1) 51\n(2) 48\n(3) 32\n(4) 64",
+    "solution": "Sol. $\\mathrm{HHH} \\rightarrow 0$\nHHT $\\rightarrow 0$\nHTH $\\rightarrow 1$\nHTT $\\rightarrow 0$\nTHH $\\rightarrow 1$\nTHT $\\rightarrow 1$\nTTH $\\rightarrow 1$\nTTT $\\rightarrow 0$\nProbability distribution\n\n| $\\mathrm{x}_{\\mathrm{i}}$ | 0 | 1 |\n| :---: | :---: | :---: |\n| $\\mathrm{P}\\left(\\mathrm{x}_{\\mathrm{i}}\\right)$ | $1 / 2$ | $1 / 2$ |\n\n$\\mu=\\sum \\mathrm{x}_{\\mathrm{i}} \\mathrm{p}_{\\mathrm{i}}=\\frac{1}{2}$\n$\\sigma^{2}=\\sum x_{i}^{2} p_{i}-\\mu^{2}$\n$=\\frac{1}{2}-\\frac{1}{4}=\\frac{1}{4}$\n$64\\left(\\mu+\\sigma^{2}\\right)=64\\left(\\frac{1}{2}+\\frac{1}{4}\\right)=48$",
+    "option-1": "51",
+    "option-2": "48",
+    "option-3": "32",
+    "option-4": "64",
+    "correct-option": "2",
+    "subject": "math",
+    "topic": ["probability"],
+    "techniques": ["probability distributions", "mean and variance"]
+  },
+  {
+    "question": "7. Let $a_{1}, a_{2}, a_{3} \\ldots$. be a G.P. of increasing positive terms. If $\\mathrm{a}_{1} \\mathrm{a}_{5}=28$ and $\\mathrm{a}_{2}+\\mathrm{a}_{4}=29$, the $\\mathrm{a}_{6}$ is equal to\n(1) 628\n(2) 526\n(3) 784\n(4) 812",
+    "solution": "Sol. $\\mathrm{a}_{1} \\cdot \\mathrm{a}_{5}=28 \\Rightarrow \\mathrm{a} \\cdot \\mathrm{ar}^{4}=28 \\Rightarrow \\mathrm{a}^{2} \\mathrm{r}^{4}=28$\n$a_{2}+a_{4}=29 \\Rightarrow a r+a r^{3}=29$\n$\\Rightarrow a r\\left(1+r^{2}\\right)=29$\n$\\Rightarrow \\mathrm{a}^{2} \\mathrm{r}^{2}\\left(1+\\mathrm{r}^{2}\\right)^{2}=(29)^{2}$\nBy Eq. (1) & (2)\n$\\frac{r^{2}}{\\left(1+r^{2}\\right)^{2}}=\\frac{28}{29 \\times 29}$\n$\\Rightarrow \\frac{\\mathrm{r}}{1+\\mathrm{r}^{2}}=\\frac{\\sqrt{28}}{29} \\Rightarrow \\mathrm{r}=\\sqrt{28}$\n$\\because a^{2} r^{4}=28 \\Rightarrow a^{2} \\times(28)^{2}=28$\n$\\Rightarrow \\mathrm{a}=\\frac{1}{\\sqrt{28}}$\n$\\therefore \\mathrm{a}_{6}=\\mathrm{ar}^{5}=\\frac{1}{\\sqrt{28}} \\times(28)^{2} \\sqrt{28}=784$",
+    "option-1": "628",
+    "option-2": "526",
+    "option-3": "784",
+    "option-4": "812",
+    "correct-option": "3",
+    "subject": "math",
+    "topic": ["sequences and series"],
+    "techniques": ["geometric progression"]
+  },
+  {
+    "question": "8. Let $L_{1}: \\frac{x-1}{2}=\\frac{y-2}{3}=\\frac{z-3}{4}$ and $L_{2}: \\frac{x-2}{3}=\\frac{y-4}{4}=\\frac{z-5}{5}$ be two lines. Then which of the following points lies on the line of the shortest distance between $\\mathrm{L}_{1}$ and $\\mathrm{L}_{2}$ ?\n(1) $\\left(-\\frac{5}{3},-7,1\\right)$\n(2) $\\left(2,3, \\frac{1}{3}\\right)$\n(3) $\\left(\\frac{8}{3},-1, \\frac{1}{3}\\right)$\n(4) $\\left(\\frac{14}{3},-3, \\frac{22}{3}\\right)$",
+    "solution": "Sol.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-02.jpg?height=301&width=315&top_left_y=2114&top_left_x=1147)\n$\\mathrm{P}(2 \\lambda+1,3 \\lambda+2,4 \\lambda+3)$ on $\\mathrm{L}_{1}$\n$\\mathrm{Q}(3 \\mu+2,4 \\mu+4,5 \\mu+5)$ on $\\mathrm{L}_{2}$\nDr's of $\\mathrm{PQ}=3 \\mu-2 \\lambda+1,4 \\mu-3 \\lambda+2,5 \\mu-4 \\lambda+2$\n$\\mathrm{PQ} \\perp \\mathrm{L}_{1}$\n$\\Rightarrow(3 \\mu-2 \\lambda+1) 2+(4 \\mu-3 \\lambda+2) 3+(5 \\mu-4 \\underline{\\lambda}+2) 4=0$\n$38 \\mu-29 \\lambda+16=0$\n$\\mathrm{PQ} \\perp \\mathrm{L}_{2}$\n$\\Rightarrow(3 \\mu-2 \\lambda+1) 3+(4 \\mu-3 \\lambda+2) 4+(5 \\mu-4 \\underline{\\lambda}+2) 5=0$\n$50 \\mu-38 \\lambda+21=0$\nBy (1) & (2)\n$\\lambda=\\frac{1}{3} ; \\mu=\\frac{-1}{6}$\n$\\therefore \\mathrm{P}\\left(\\frac{5}{3}, 3, \\frac{13}{3}\\right) & \\mathrm{Q}\\left(\\frac{3}{2}, \\frac{10}{3}, \\frac{25}{6}\\right)$\nLine PQ\n$\\frac{x-\\frac{5}{3}}{\\frac{1}{6}} \\quad \\frac{y-3}{\\frac{-1}{3}} \\quad \\frac{z-\\frac{13}{3}}{\\frac{1}{6}}$\n$\\frac{x-\\frac{5}{3}}{1}=\\frac{y-3}{-2}=\\frac{z-\\frac{13}{3}}{1}$\nPoint $\\left(\\frac{14}{3},-3, \\frac{22}{3}\\right)$\nlies on the line PQ",
+    "option-1": $\\left(-\\frac{5}{3},-7,1\\right)$",
+    "option-2": $\\left(2,3, \\frac{1}{3}\\right)$",
+    "option-3": $\\left(\\frac{8}{3},-1, \\frac{1}{3}\\right)$",
+    "option-4": $\\left(\\frac{14}{3},-3, \\frac{22}{3}\\right)$",
+    "correct-option": "4",
+    "subject": "math",
+    "topic": ["3D geometry"],
+    "techniques": ["shortest distance between skew lines"]
+  },
+  {
+    "question": "9. The product of all solutions of the equation $\\mathrm{e}^{5\\left(\\log _{e} x\\right)^{2}+3}=\\mathrm{x}^{8}, x>0$, is :\n(1) $e^{8 / 5}$\n(2) $e^{6 / 5}$\n(3) $e^{2}$\n(4) e",
+    "solution": "Sol. $\\quad e^{5(f(n))^{2}+3}=x^{8}$\n$\\Rightarrow \\ell n \\mathrm{e}^{5(\\mathrm{fnx})^{2}+3}=\\ell n \\mathrm{x}^{8}$\n$\\Rightarrow 5(\\ell n x)^{2}+3=8 \\ell n x$\n($\\ell n x=t$)\n$\\Rightarrow 5 t^{2}-8 t+3=0$\n$\\mathrm{t}_{1}+\\mathrm{t}_{2}=\\frac{8}{5}$\n$\\operatorname{lnx}_{1}=\\frac{8}{5}$\n$x_{1} x_{2}=e^{8 / 5}$",
+    "option-1": "$e^{8 / 5}$",
+    "option-2": "$e^{6 / 5}$",
+    "option-3": "$e^{2}$",
+    "option-4": "e",
+    "correct-option": "1",
+    "subject": "math",
+    "topic": ["logarithms", "equations"],
+    "techniques": ["solving equations", "logarithmic properties"]
+  },
+  {
+    "question": "10. If $\\sum_{\\mathrm{r}=1}^{\\mathrm{n}} \\mathrm{T}_{\\mathrm{r}}=\\frac{(2 \\mathrm{n}-1)(2 \\mathrm{n}+1)(2 \\mathrm{n}+3)(2 \\mathrm{n}+5)}{64}$, then\n$\\lim _{n \\rightarrow \\infty} \\sum_{r=1}^{n}\\left(\\frac{1}{T_{r}}\\right)$ is equal to :\n(1) 1\n(2) 0\n(3) $\\frac{2}{3}$\n(4) $\\frac{1}{3}$",
+    "solution": "Sol. $\\mathrm{T}_{\\mathrm{n}}=\\mathrm{S}_{\\mathrm{n}}-\\mathrm{S}_{\\mathrm{n}-1}$\n$\\Rightarrow \\mathrm{T}_{\\mathrm{n}}=\\frac{1}{8}(2 \\mathrm{n}-1)(2 \\mathrm{n}+1)(2 \\mathrm{n}+3)$\n$\\Rightarrow \\frac{1}{T_{n}}=\\frac{8}{(2 n-1)(2 n+1)(2 n+3)}$\n$\\lim _{\\mathrm{n} \\rightarrow \\infty} \\sum_{\\mathrm{r}=1}^{\\mathrm{n}} \\frac{1}{\\mathrm{~T}_{\\mathrm{r}}}=\\lim _{\\mathrm{n} \\rightarrow \\infty} 8 \\sum_{\\mathrm{r}=1}^{\\mathrm{n}} \\frac{1}{(2 \\mathrm{n}-1)(2 \\mathrm{n}+1)(2 \\mathrm{n}+3)}$\n$=\\lim _{\\mathrm{n} \\rightarrow \\infty} \\frac{8}{4} \\sum\\left(\\frac{1}{(2 n-1)(2 n+1)}-\\frac{1}{(2 n+1)(2 n+3)}\\right)$\n$=\\lim _{\\mathrm{n} \\rightarrow \\infty} 2\\left[\\left(\\frac{1}{1.3}-\\frac{1}{3.5}\\right)+\\left(\\frac{1}{3.5}-\\frac{1}{5.7}\\right)+\\ldots\\right]$\n$=\\frac{2}{3}",
+    "option-1": "1",
+    "option-2": "0",
+    "option-3": "$\\frac{2}{3}$",
+    "option-4": "$\\frac{1}{3}$",
+    "correct-option": "3",
+    "subject": "math",
+    "topic": ["sequences and series", "limits"],
+    "techniques": ["telescoping series", "limits of sums"]
+  }
+]
+``````json
+[
+  {
+    "question": "11. From all the English alphabets, five letters are chosen and are arranged in alphabetical order. The total number of ways, in which the middle letter is ' $M$ ', is : \n(1) 14950\n(2) 6084\n(3) 4356\n(4) 5148\n",
+    "solution": "Sol. $\\underbrace{\\mathrm{AB}}_{12} \\quad \\mathrm{M} \\underbrace{\\mathrm{N} . . . . . . . . \\mathrm{Z}}_{13}$\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-03.jpg?height=121&width=481&top_left_y=2144&top_left_x=1150)\n",
+    "option-1": "14950",
+    "option-2": "6084",
+    "option-3": "4356",
+    "option-4": "5148",
+    "option-5": null,
+    "correct-option": "4",
+    "subject": "math",
+    "topic": ["permutation and combination"],
+    "techniques": ["selection", "arrangement"]
+  },
+  {
+    "question": "12. Let $\\mathrm{x}=\\mathrm{x}(\\mathrm{y})$ be the solution of the differential equation $y^{2} d x+\\left(x-\\frac{1}{y}\\right) d y=0$. If $x(1)=1$, then $x\\left(\\frac{1}{2}\\right)$ is :\n(1) $\\frac{1}{2}+e$\n(2) $\\frac{3}{2}+\\mathrm{e}$\n(3) $3-\\mathrm{e}$\n(4) $3+\\mathrm{e}$\n",
+    "solution": "Sol. $\\frac{d x}{d y}+\\left(\\frac{1}{\\mathrm{y}^{2}}\\right) \\mathrm{x}=\\frac{1}{\\mathrm{y}^{3}}$\nI.F. $=\\mathrm{e}^{\\int \\frac{1}{\\mathrm{y}^{2}} \\mathrm{dy}}=\\mathrm{e}^{-\\frac{1}{y}}$\n$\\Rightarrow$ x.e $e^{-\\frac{1}{y}}=\\int\\left(e^{-\\frac{1}{t}}\\right) \\cdot \\frac{1}{y^{3}} d y$\nPut $-\\frac{1}{y}=\\mathrm{t}$\n$+\\frac{1}{y^{2}} d y=d t$\nx. $e^{-\\frac{1}{y}}=-\\int t . e^{t} d t$\nx. $e^{-\\frac{1}{y}}=-t e^{t}+e^{t}+C$\nx. $e^{-\\frac{1}{y}}=\\frac{+1}{y} e^{-\\frac{1}{y}}+e^{-\\frac{1}{y}}+C$\n$\\mathrm{x}=1, \\mathrm{y}=1$\n$\\frac{1}{e}=\\frac{1}{e}+\\frac{1}{e}+C$\n$\\Rightarrow \\mathrm{C}=-\\frac{1}{\\mathrm{e}}$\nPut $\\mathrm{y}=\\frac{1}{2}$\n$\\frac{x}{e^{2}}=\\frac{2}{e^{2}}+\\frac{1}{e^{2}}-\\frac{1}{e}$\n$\\mathrm{x}=3-\\mathrm{e}$\n",
+    "option-1": "$\\frac{1}{2}+e$",
+    "option-2": "$\\frac{3}{2}+\\mathrm{e}$",
+    "option-3": "$3-\\mathrm{e}$",
+    "option-4": "$3+\\mathrm{e}$",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "math",
+    "topic": ["differential equations"],
+    "techniques": ["integrating factor", "substitution"]
+  },
+  {
+    "question": "13. Let the parabola $y=x^{2}+p x-3$, meet the coordinate axes at the points $\\mathrm{P}, \\mathrm{Q}$ and R . If the circle C with centre at $(-1,-1)$ passes through the points $\\mathrm{P}, \\mathrm{Q}$ and R , then the area of $\\triangle \\mathrm{PQR}$ is :\n(1) 4\n(2) 6\n(3) 7\n(4) 5\n",
+    "solution": "Sol. $y=x^{2}+p x-3$\nLet $\\mathrm{P}(\\alpha, 0), \\mathrm{Q}(\\beta, 0), \\mathrm{R}(0,-3)$\nCircle with centre $(-1,-1)$ is $(x+1)^{2}+(y+1)^{2}=r^{2}$ Passes through $(0,-3)$\n$\\left.1^{2}+(-2)^{2}=r^{2}\\right]$\n$\\mathrm{r}^{2}=5$\n$(x+1)^{2}+(y+1)^{2}=5$\nPut $y=0$\n$(x+1)^{2}=5-1$\n$(x+1)^{2}=4$\n$x+1= \\pm 2$\n$\\mathrm{x}=1$ or $\\mathrm{x}=-3$\n$\\therefore \\mathrm{P}(1,0)$ and $\\mathrm{Q}(-3,0)$\nArea of $\\triangle \\mathrm{PQR}=\\frac{1}{2}\\left|\\begin{array}{ccc}1 & 0 & 1 \\ -3 & 0 & 1 \\ 0 & -3 & 1\\end{array}\\right|=6$\n",
+    "option-1": "4",
+    "option-2": "6",
+    "option-3": "7",
+    "option-4": "5",
+    "option-5": null,
+    "correct-option": "2",
+    "subject": "math",
+    "topic": ["parabola", "circle", "coordinate geometry"],
+    "techniques": ["solving equations", "area of triangle"]
+  },
+  {
+    "question": "14. A circle $C$ of radius 2 lies in the second quadrant and touches both the coordinate axes. Let $r$ be the radius of a circle that has centre at the point $(2,5)$ and intersects the circle C at exactly two points. If the set of all possible values of $r$ is the interval $(\\alpha, \\beta)$, then $3 \\beta-2 \\alpha$ is equal to :\n(1) 15\n(2) 14\n(3) 12\n(4) 10\n",
+    "solution": "Sol.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-04.jpg?height=401&width=532&top_left_y=1427&top_left_x=1136)\n$S_{1}:(x+2)^{2}+(y-2)^{2}=2^{2}$\n$S_{2}:(x-2)^{2}+(y-5)^{2}=r^{2}$\nBoth circle intersect at two points\n$\\therefore\\left|\\mathrm{r}_{1}-\\mathrm{r}_{2}\\right|<\\mathrm{c}_{1} \\mathrm{c}_{2}<\\mathrm{r}_{1}+\\mathrm{r}_{2}$\n$|r-2|<5<2+r$\n$\\Rightarrow 3<r<7$\n$r \\in(3,7)$\n$\\alpha=3, \\beta=7$\n$3 \\beta-2 \\alpha=15$\n",
+    "option-1": "15",
+    "option-2": "14",
+    "option-3": "12",
+    "option-4": "10",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "math",
+    "topic": ["circles", "coordinate geometry"],
+    "techniques": ["distance formula", "circle intersection condition"]
+  },
+  {
+    "question": "15. Let for $f(x)=7 \\tan ^{8} \\mathrm{x}+7 \\tan ^{6} \\mathrm{x}-3 \\tan ^{4} \\mathrm{x}-3 \\tan ^{2} \\mathrm{x}$, $\\mathrm{I}_{1}=\\int_{0}^{\\pi / 4} f(\\mathrm{x}) \\mathrm{dx}$ and $\\mathrm{I}_{2}=\\int_{0}^{\\pi / 4} \\mathrm{x} f(\\mathrm{x}) \\mathrm{dx}$. Then $7 \\mathrm{I}_{1}+12 \\mathrm{I}_{2}$ is equal to :\n(1) $2 \\pi$\n(2) $\\pi$\n(3) 1\n(4) 2\n",
+    "solution": "Sol. $f(x)=\\left(7 \\tan ^{6} x-3 \\tan ^{2} x\\right)\\left(\\sec ^{2} x\\right)$\n$I_{1}=\\int_{0}^{\\pi / 4}\\left(7 \\tan ^{6} x-3 \\tan ^{2} x\\right)\\left(\\sec ^{2} x\\right) d x$\nPut $\\tan \\mathrm{x}=\\mathrm{t}$\n$I_{1}=\\int_{0}^{1}\\left(7 t^{6}-3 t^{2}\\right) d t=\\left[t^{7}-t^{3}\\right]_{0}^{1}=0$\n$I_{2}=\\int_{0}^{\\pi / 4} x \\underbrace{\\left(7 \\tan ^{6} x-3 \\tan ^{2} x\\right)\\left(\\sec ^{2} x\\right)}_{\\mathrm{II}} d x$\n$=\\left[x\\left(\\tan ^{7} x-\\tan ^{3} x\\right)\\right]_{0}^{\\pi / 4}-\\int_{0}^{\\pi / 4}\\left(\\tan ^{7} x-\\tan ^{3} x\\right) d x$\n$=0-\\int_{0}^{\\pi / 4} \\tan ^{3} x\\left(\\tan ^{2} x-1\\right)\\left(1+\\tan ^{2} x\\right) d x$\nPut $\\tan \\mathrm{x}=\\mathrm{t}$\n$=-\\int_{0}^{1}\\left(t^{5}-t^{3}\\right) d t=-\\left[\\frac{t^{6}}{6}-\\frac{t^{4}}{4}\\right]=\\frac{1}{12}$\n$7 \\mathrm{I}_{1}+12 \\mathrm{I}_{2}=1$\n",
+    "option-1": "$2 \\pi$",
+    "option-2": "$\\pi$",
+    "option-3": "1",
+    "option-4": "2",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "math",
+    "topic": ["integration"],
+    "techniques": ["substitution", "integration by parts"]
+  },
+  {
+    "question": "16. Let $f(\\mathrm{x})$ be a real differentiable function such that $f(0)=1$ and $f(\\mathrm{x}+\\mathrm{y})=f(\\mathrm{x}) f^{\\prime}(\\mathrm{y})+f^{\\prime}(\\mathrm{x}) f(\\mathrm{y})$ for all $\\mathrm{x}, \\mathrm{y} \\in \\mathbf{R}$. Then $\\sum_{\\mathrm{n}=1}^{100} \\log _{\\mathrm{e}} f(\\mathrm{n})$ is equal to :\n(1) 2384\n(2) 2525\n(3) 5220\n(4) 2406\n",
+    "solution": "Sol. $f(x+y)=f(x) f^{\\prime}(y)+f^{\\prime}(x) f(x)$\nPut $=x=y=0$\n$f(0)=f(0) f^{\\prime}(0)+f^{\\prime}(0) f(0)$\n$\\mathrm{f}^{\\prime}(0)=\\frac{1}{2}$\nPut $\\mathrm{y}=0$\n$f(x)=f(x) f^{\\prime}(0)+f^{\\prime}(x) f(0)$\n$f(x)=\\frac{1}{2} f(x)+f^{\\prime}(x)$\n$f^{\\prime}(x)=\\frac{f(x)}{2}$\n$\\frac{d y}{d x}=\\frac{y}{2} \\Rightarrow \\int \\frac{d y}{y}=\\int \\frac{d x}{2}$\n$\\Rightarrow \\ell$ ny $=\\frac{x}{2}+c$\n$\\because \\mathrm{f}(0)=1 \\Rightarrow \\mathrm{C}=0$\n$\\ell$ ny $=\\frac{\\pi}{2} \\Rightarrow f(x)=e^{x / 2}$\n$\\ln \\mathrm{f}(\\mathrm{n})=\\frac{\\mathrm{n}}{2}$\n$\\sum_{\\mathrm{n}=1}^{100} \\ell f(\\mathrm{n})=\\frac{1}{2} \\sum_{\\mathrm{n}=1}^{100} \\mathrm{n}=\\frac{5050}{2}$\n$=2525$\n",
+    "option-1": "2384",
+    "option-2": "2525",
+    "option-3": "5220",
+    "option-4": "2406",
+    "option-5": null,
+    "correct-option": "2",
+    "subject": "math",
+    "topic": ["differential equations", "functions"],
+    "techniques": ["solving differential equation", "substitution"]
+  },
+  {
+    "question": "17. Let $\\mathrm{A}=\{1,2,3, \\ldots \\ldots ., 10\}$ and\n$\\mathrm{B}=\\left\\{\\frac{\\mathrm{m}}{\\mathrm{n}}: \\mathrm{m}, \\mathrm{n} \\in \\mathrm{A}, \\mathrm{m}<\\mathrm{n} \\text { and } \\operatorname{gcd}(\\mathrm{m}, \\mathrm{n})=1\\right\\}$.\nThen $n(B)$ is equal to :\n(1) 31\n(2) 36\n(3) 37\n(4) 29\n",
+    "solution": "Sol. $A=\{1,2, \\ldots .10\}$\n$B\\left\\{\\frac{\\mathrm{m}}{\\mathrm{n}}=\\mathrm{m}, \\mathrm{n} \\in \\mathrm{A}, \\mathrm{m}<\\mathrm{n}, \\operatorname{gcd}(\\mathrm{m}, \\mathrm{n})=1\\right\\}$\n$n(B)$\n$n=2 \\quad \\left{\\frac{1}{2}\\right}$\n$n=3 \\quad \\left{\\frac{1}{3}, \\frac{2}{3}\\right}$\n$n=4 \\quad \\left{\\frac{1}{4}, \\frac{3}{4}\\right}$\n$n=5 \\quad \\left{\\frac{1}{5}, \\frac{2}{5}, \\frac{3}{5}, \\frac{4}{5}\\right}$\n$n=6 \\quad \\left{\\frac{1}{6}, \\frac{5}{6}\\right}$\n$n=7 \\quad \\left{\\frac{1}{7}, \\frac{2}{7}, \\frac{3}{7}, \\frac{4}{7}, \\frac{5}{7}, \\frac{6}{7}\\right}$\n$n=8 \\quad \\left{\\frac{1}{8}, \\frac{3}{8}, \\frac{5}{8}, \\frac{7}{8}\\right}$\n$n=9 \\quad \\left{\\frac{1}{9}, \\frac{2}{9}, \\frac{4}{9}, \\frac{5}{9}, \\frac{7}{9}, \\frac{8}{9}\\right}$\n$n=10 \\quad \\left{\\frac{1}{10}, \\frac{3}{10}, \\frac{7}{10}, \\frac{9}{10}\\right}$\n$n(B)=31$\n",
+    "option-1": "31",
+    "option-2": "36",
+    "option-3": "37",
+    "option-4": "29",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "math",
+    "topic": ["sets and relations", "number theory"],
+    "techniques": ["gcd", "counting"]
+  },
+  {
+    "question": "18. The area of the region, inside the circle $(x-2 \\sqrt{3})^{2}+y^{2}=12$ and outside the parabola $y^{2}=2 \\sqrt{3} x$ is\n(1) $6 \\pi-8$\n(2) $3 \\pi-8$\n(3) $6 \\pi-16$\n(4) $3 \\pi+8$\n",
+    "solution": "Sol.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-06.jpg?height=529&width=726&top_left_y=738&top_left_x=208)\n$y^{2}=2 \\sqrt{3} x$\n$(x-2 \\sqrt{3})^{2}+y^{2}=(2 \\sqrt{3})^{2}$\n$A=\\frac{\\pi r^{2}}{2}-2 \\int_{0}^{2 \\sqrt{3}} \\sqrt{2 \\sqrt{3} x} d x$\n$\\frac{\\pi(12)}{2}-2 \\sqrt{2 \\sqrt{3}} \\frac{\\left(x^{3 / 2}\\right)_{0}^{2 / 3}}{3 / 2}$\n$=6 \\pi-16$\n",
+    "option-1": "$6 \\pi-8$",
+    "option-2": "$3 \\pi-8$",
+    "option-3": "$6 \\pi-16$",
+    "option-4": "$3 \\pi+8$",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "math",
+    "topic": ["area under the curve", "circles", "parabola"],
+    "techniques": ["integration", "area calculation"]
+  },
+  {
+    "question": "19. Two balls are selected at random one by one without replacement from a bag containing 4 white and 6 black balls. If the probability that the first selected ball is black, given that the second selected ball is also black, is $\\frac{m}{n}$, where $\\operatorname{gcd}(m, n)=1$, then $\\mathrm{m}+\\mathrm{n}$ is equal to :\n(1) 14\n(2) 4\n(3) 11\n(4) 13\n",
+    "solution": "Sol. $P=\\frac{\\frac{6}{10} \\times \\frac{5}{9}}{\\frac{4}{10} \\times \\frac{6}{9}+\\frac{6}{10} \\times \\frac{5}{9}}=\\frac{5}{9}$\n$\\mathrm{m}=5, \\mathrm{n}=9$\n$\\mathrm{m}+\\mathrm{n}=14$\n",
+    "option-1": "14",
+    "option-2": "4",
+    "option-3": "11",
+    "option-4": "13",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "math",
+    "topic": ["probability", "conditional probability"],
+    "techniques": ["probability calculation", "conditional probability formula"]
+  },
+  {
+    "question": "20. Let the foci of a hyperbola be $(1,14)$ and $(1,-12)$. If it passes through the point $(1,6)$, then the length of its latus-rectum is :\n(1) $\\frac{25}{6}$\n(2) $\\frac{24}{5}$\n(3) $\\frac{288}{5}$\n(4) $\\frac{144}{5}$\n",
+    "solution": "Sol.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-06.jpg?height=612&width=627&top_left_y=799&top_left_x=1140)\nbe $=13, b=5$\n$\\mathrm{a}^{2}=\\mathrm{b}^{2}\\left(\\mathrm{e}^{2}-1\\right)$\n$=b^{2} \\mathrm{e}^{2}-\\mathrm{b}^{2}$\n$=169-25=144$\n$\\ell(L R)=\\frac{2 a^{2}}{b}=\\frac{2 \\times 144}{5}=\\frac{288}{5}$\n",
+    "option-1": "$\\frac{25}{6}$",
+    "option-2": "$\\frac{24}{5}$",
+    "option-3": "$\\frac{288}{5}$",
+    "option-4": "$\\frac{144}{5}$",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "math",
+    "topic": ["hyperbola", "conic sections"],
+    "techniques": ["standard equation of hyperbola", "latus rectum formula"]
+  }
+]
+``````json
+[
+  {
+    "question": "21. Let the function,\n$f(x)= \\begin{cases}-3 a x^{2}-2, & x<1 \\\\ a^{2}+b x, & x \\geq 1\\end{cases}$\nBe differentiable for all $\\mathrm{x} \\in \\mathbf{R}$, where $\\mathrm{a}>1, \\mathrm{~b} \\in \\mathbf{R}$. If the area of the region enclosed by $y=f(x)$ and the line $\\mathrm{y}=-20$ is $\\alpha+\\beta \\sqrt{3}, \\alpha, \\beta, \\in \\mathrm{Z}$, then the value of $\\alpha+\\beta$ is $\\qquad$ .\nAns. (34)",
+    "solution": "$f(x)$ is continuous and differentiable\nat $\\mathrm{x}=1 ; \\quad \\mathrm{LHL}=\\mathrm{RHL}, \\mathrm{LHD}=\\mathrm{RHD}$\n$-3 a-2=a^{2}+b,-6 a=b$ $\\mathrm{a}=2,1 ; \\mathrm{b}=-12$\n$f(x)=\\left\\{\\begin{array}{ccc}-6 x^{2}-2 & ; & x<1 \\\\ 4-12 x & ; & x \\geq 1\\end{array}\\right.$\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-07.jpg?height=317&width=683&top_left_y=207&top_left_x=201)\n\nArea $=\\int_{-\\sqrt{3}}^{1}\\left(-6 x^{2}-2+20\\right) d x+\\int_{1}^{2}(4-12 x+20) d x$ $16+12 \\sqrt{3}+6=22+12 \\sqrt{3}$",
+    "option-1": null,
+    "option-2": null,
+    "option-3": null,
+    "option-4": null,
+    "option-5": null,
+    "correct-option": null,
+    "subject": "math",
+    "topic": ["calculus", "area under the curve", "differentiability"],
+    "techniques": ["integration", "finding constants", "solving equations"]
+  },
+  {
+    "question": "22. If $\\sum_{\\mathrm{r}=0}^{5} \\frac{{ }^{11} \\mathrm{C}_{2 \\mathrm{r}+1}}{2 \\mathrm{r}+2}=\\frac{\\mathrm{m}}{\\mathrm{n}}, \\operatorname{gcd}(\\mathrm{m}, \\mathrm{n})=1$, then $\\mathrm{m}-\\mathrm{n}$ is equal to $\\qquad$ $-$",
+    "solution": "$\\int_{0}^{1}(1+x)^{11} d x=\\left[C_{0} x+\\frac{C_{1} x^{2}}{2}+\\frac{C_{2} x^{3}}{3}+\\ldots\\right]_{0}^{1}$\n$\\frac{2^{12}-1}{12}=C_{0}+\\frac{C_{1}}{2}+\\frac{C_{2}}{3}+\\frac{C_{3}}{4}+\\ldots$\n$\\int_{-1}^{0}(1+x)^{11} d x=\\left[C_{0} x+\\frac{C_{1} x^{2}}{2}+\\frac{C_{2} x^{3}}{3}+\\ldots\\right]_{-1}^{0}$\n$\\frac{1}{12}=C_{0}-\\frac{C_{1}}{2}+\\frac{C_{2}}{3}-\\frac{C_{3}}{4}+\\ldots$\n$\\frac{2^{12}-2}{12}=2\\left(\\frac{C_{1}}{2}+\\frac{C_{3}}{4}+\\frac{C_{5}}{6}+\\ldots\\right)$\n$\\frac{\\mathrm{C}_{1}}{2}+\\frac{\\mathrm{C}_{3}}{4}-\\frac{\\mathrm{C}_{5}}{6}+\\ldots=\\frac{2^{11}-1}{12}=\\frac{2047}{12}$",
+    "option-1": null,
+    "option-2": null,
+    "option-3": null,
+    "option-4": null,
+    "option-5": null,
+    "correct-option": null,
+    "subject": "math",
+    "topic": ["binomial theorem", "integration"],
+    "techniques": ["integration", "applying binomial theorem"]
+  },
+  {
+    "question": "23. Let $A$ be a square matrix of order 3 such that $\\operatorname{det}(A)=-2$ and $\\operatorname{det}(3 \\operatorname{adj}(-6 \\operatorname{adj}(3 A)))=2^{m+n} \\cdot 3^{m n}$, $\\mathrm{m}>\\mathrm{n}$. Then $4 \\mathrm{~m}+2 \\mathrm{n}$ is equal to $\\qquad$ .",
+    "solution": "$|A|=-2$\n$\\operatorname{det}(3 \\operatorname{adj}(-6 \\operatorname{adj}(3 A)))$\n$=3^{3} \\operatorname{det}(\\operatorname{adj}(-\\operatorname{adj}(3 A)))$\n$=3^{3}(-6)^{6}(\\operatorname{det}(3 A))^{4}$\n$=3^{21} \\times 2^{10}$\n$\\mathrm{m}+\\mathrm{n}=10$\n$\\mathrm{mn}=21$\n$\\mathrm{m}=7 ; \\mathrm{n}=3$",
+    "option-1": null,
+    "option-2": null,
+    "option-3": null,
+    "option-4": null,
+    "option-5": null,
+    "correct-option": null,
+    "subject": "math",
+    "topic": ["matrices and determinants"],
+    "techniques": ["properties of determinants", "adjoint of a matrix"]
+  },
+  {
+    "question": "24. Let $L_{1}: \\frac{x-1}{3}=\\frac{y-1}{-1}=\\frac{z+1}{0}$ and\n$L_{2}: \\frac{\\mathrm{x}-2}{2}=\\frac{\\mathrm{y}}{0}=\\frac{\\mathrm{z}+4}{\\alpha}, \\alpha \\in \\mathrm{R}$, be two lines, which intersect at the point $B$. If $P$ is the foot of perpendicular from the point $\\mathrm{A}(1,1,-1)$ on $\\mathrm{L}_{2}$, then the value of $26 \\alpha(\\mathrm{PB})^{2}$ is $\\qquad$ -",
+    "solution": "Point B\n$(3 \\lambda+1,-\\lambda+1,-1) \\equiv(2 \\mu+2,0, \\alpha \\mu-4)$\n$3 \\lambda+1=2 \\mu+2$\n$-\\lambda+1=0$\n$-1=\\alpha \\mu-4$\n$\\lambda=1, \\mu=1, \\alpha=3$\n$\\mathrm{B}(4,0,-1)$\nLet Point ' P ' is $(2 \\delta+2,0,3 \\delta-4)$\nDr's of AP $<2 \\delta+1,-1,3 \\delta-3>$\n$\\mathrm{AP} \\perp \\mathrm{L}_{2} \\Rightarrow \\delta=\\frac{7}{13}$\n$\\mathrm{P}\\left(\\frac{40}{13}, 0, \\frac{-31}{13}\\right)$\n$2 \\sigma \\delta(\\mathrm{PB})^{2}=26 \\times 3 \\times\\left(\\frac{144}{169}+\\frac{324}{169}\\right)$\n$=216$",
+    "option-1": null,
+    "option-2": null,
+    "option-3": null,
+    "option-4": null,
+    "option-5": null,
+    "correct-option": null,
+    "subject": "math",
+    "topic": ["3D geometry", "lines", "intersection of lines", "foot of the perpendicular"],
+    "techniques": ["finding the intersection of lines", "finding the foot of the perpendicular", "using the dot product"]
+  },
+  {
+    "question": "25. Let $\\vec{c}$ be the projection vector of $\\vec{b}=\\lambda \\hat{i}+4 \\hat{k}, \\lambda>0$, on the vector $\\vec{a}=\\hat{i}+2 \\hat{j}+2 \\hat{k}$. If $|\\vec{a}+\\vec{c}|=7$, then the area of the parallelogram formed by the vectors $\\vec{b}$ and $\\vec{c}$ is $\\qquad$ -",
+    "solution": "$\\vec{c}=\\left(\\frac{\\vec{b} \\cdot \\vec{a}}{||\\vec{a} |\\right) \\frac{\\vec{a}}{|| \\vec{a} |}$\n$=\\left(\\frac{\\lambda+8}{9}\\right)(\\hat{\\mathrm{i}}+2 \\hat{\\mathrm{j}}+2 \\hat{\\mathrm{k}})$\n$|\\overrightarrow{\\mathrm{a}}+\\overrightarrow{\\mathrm{c}}|-=7 \\Rightarrow \\lambda=4$\nArea of parallelogram\n$=|\\overrightarrow{\\mathrm{b}} \\times \\overrightarrow{\\mathrm{c}}|=\\left|\\begin{array}{ccc}\\hat{\\mathrm{i}} & \\hat{\\mathrm{j}} & \\hat{k} \\\\ \\frac{4}{3} & \\frac{8}{3} & \\frac{8}{3} \\\\ 4 & 0 & 4\\end{array}\\right|$\n$=16$",
+    "option-1": null,
+    "option-2": null,
+    "option-3": null,
+    "option-4": null,
+    "option-5": null,
+    "correct-option": null,
+    "subject": "math",
+    "topic": ["vectors", "projection", "area of parallelogram"],
+    "techniques": ["finding the projection of a vector", "calculating the magnitude of a vector", "finding the cross product"]
+  }
+]
+``````json
+[
+  {
+    "question": "| PHYSICS |\n| :---: |\n| 26. Given below are two statements . |\n\nSol. Total charge inside the cube\n$=\\frac{\\lambda \\frac{\\mathrm{a}}{2}}{4}=\\frac{\\lambda \\mathrm{a}}{8}$\n$\\therefore \\phi=\\frac{\\mathrm{q}_{\\text {in }}}{\\varepsilon_{0}}=\\frac{\\lambda \\mathrm{a}}{8 \\varepsilon_{0}}$\n28.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-08.jpg?height=320&width=472&top_left_y=868&top_left_x=1140)\n\nSliding contact of a potentiometer is in the middle of the potentiometer wire having resistance $R_{P}=$ $1 \\Omega$ as shown in the figure. An external resistance of $R_{e}=2 \\Omega$ is connected via the sliding contact.",
+    "solution": "Ans. (1)\n(1) $\\frac{\\lambda \\mathrm{a}}{8 \\epsilon_{0}}$\n(2) $\\frac{\\lambda a}{16 \\epsilon_{0}}$\n(3) $\\frac{\\lambda a}{2 \\epsilon_{0}}$\n(4) $\\frac{\\lambda a}{4 \\epsilon_{0}}$",
+    "option-1": "$\\frac{\\lambda \\mathrm{a}}{8 \\epsilon_{0}}$",
+    "option-2": "$\\frac{\\lambda a}{16 \\epsilon_{0}}$",
+    "option-3": "$\\frac{\\lambda a}{2 \\epsilon_{0}}$",
+    "option-4": "$\\frac{\\lambda a}{4 \\epsilon_{0}}$",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "physics",
+    "topic": ["electromagnetism", "gauss law"],
+    "techniques": ["flux calculation"]
+  },
+  {
+    "question": "29. Given below are two statements : one is labelled as\n\nAssertion (A) and the other is labelled as Reason (R).\n\nAssertion (A) : If Young's double slit experiment is performed in an optically denser medium than air, then the consecutive fringes come closer.\n\nReason (R) : The speed of light reduces in an optically denser medium than air while its frequency does not change.\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+    "solution": "Ans. (1)\nSol. $\\beta($ fringe width $)=\\frac{\\lambda D}{d}$\nIn denser medium, $\\lambda \\downarrow \\Rightarrow \\beta \\downarrow$\n$\\Rightarrow$ fringe come closer\nAlso, $\\mu=\\frac{\\mathrm{C}}{\\mathrm{V}} \\Rightarrow \\mathrm{V}=\\frac{\\mathrm{c}}{\\mu}$\nFrequency remains same,\n$\\Rightarrow \\mu=\\frac{\\lambda_{\\text {vac. }} \\mathrm{f}}{\\lambda_{\\text {med }} \\mathrm{f}} \\Rightarrow \\lambda_{\\text {med }}=\\frac{\\lambda_{\\text {vac. }}}{\\mu}$",
+    "option-1": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+    "option-2": "(A) is false but (R) is true.",
+    "option-3": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+    "option-4": "(A) is true but (R) is false.",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "physics",
+    "topic": ["optics", "wave optics", "young's double slit experiment"],
+    "techniques": ["fringe width formula", "refractive index"]
+  },
+  {
+    "question": "30. Two spherical bodies of same materials having radii 0.2 m and 0.8 m are placed in same atmosphere. The temperature of the smaller body is 800 K and temperature of bigger body is 400 K . If the energy radiate from the smaller body is E, the energy radiated from the bigger body is (assume, effect of the surrounding to be negligible)",
+    "solution": "Ans. (2)\nSol. $\\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=\\sigma \\mathrm{eAT}^{4} \\Rightarrow \\mathrm{P} \\propto \\mathrm{AT}^{4}$\n$\\frac{\\mathrm{P}_{\\text {smaller }}}{\\mathrm{P}_{\\text {larger }}}=\\frac{(0.2)^{2} \\times 800^{4}}{(0.8)^{2} \\times 400^{4}}$\n$\\frac{1}{16} \\times 16=1$\n$\\therefore \\mathrm{P}_{\\text {larger }}=\\mathrm{P}_{\\text {smaller }}$",
+    "option-1": "256 E",
+    "option-2": "E",
+    "option-3": "64 E",
+    "option-4": "16 E",
+    "option-5": null,
+    "correct-option": "2",
+    "subject": "physics",
+    "topic": ["thermodynamics", "heat transfer", "radiation"],
+    "techniques": ["stefan-boltzmann law"]
+  },
+  {
+    "question": "31. An amount of ice of mass $10^{-3} \\mathrm{~kg}$ and temperature $-10^{\\circ} \\mathrm{C}$ is transformed to vapour of temperature $110^{\\circ}$ by applying heat. The total amount of work required for this conversion is,\n(Take, specific heat of ice $=2100 \\mathrm{Jkg}^{-1} \\mathrm{~K}^{-1}$, specific heat of water $=4180 \\mathrm{Jkg}^{-1} \\mathrm{~K}^{-1}$, specific heat of steam $=1920 \\mathrm{Jkg}^{-1} \\mathrm{~K}^{-1}$, Latent heat of\nice $=3.35 \\times 10^{5} \\mathrm{Jkg}^{-1}$ and Latent heat of steam\n$=2.25 \\times 10^{6} \\mathrm{Jkg}^{-1}$ )",
+    "solution": "Ans. (2)\nSol.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-09.jpg?height=121&width=709&top_left_y=1533&top_left_x=1142)\n$\\Delta \\mathrm{Q}_{1}=\\mathrm{m} \\times \\mathrm{S}_{\\mathrm{I}} \\times \\Delta \\mathrm{T}=10^{-3} \\times 2100 \\times 10=21 \\mathrm{~J}$\n$\\Delta \\mathrm{Q}_{2}=\\mathrm{m} \\times \\mathrm{L}_{\\mathrm{f}}=10^{-3} \\times 3.35 \\times 10^{5}=335 \\mathrm{~J}$\n$\\Delta \\mathrm{Q}_{3}=\\mathrm{m} \\times \\mathrm{S}_{\\mathrm{w}} \\times \\Delta \\mathrm{T}=10^{-3} \\times 4180 \\times 100=418 \\mathrm{~J}$\n$\\Delta \\mathrm{Q}_{4}=\\mathrm{m} \\times \\mathrm{L}_{\\mathrm{V}}=10^{-3} \\times 2.25 \\times 10^{6}=2250 \\mathrm{~J}$\n$\\Delta \\mathrm{Q}_{5}=\\mathrm{m} \\times \\mathrm{S}_{\\mathrm{v}} \\times \\Delta \\mathrm{T}=10^{-3} \\times 1920 \\times 10=19.2 \\mathrm{~J}$\n$\\Delta \\mathrm{Q}_{\\text {net }}=3043.2 \\mathrm{~J}$",
+    "option-1": "3022 J",
+    "option-2": "3043 J",
+    "option-3": "3003 J",
+    "option-4": "3024 J",
+    "option-5": null,
+    "correct-option": "2",
+    "subject": "physics",
+    "topic": ["thermodynamics", "heat transfer", "phase change"],
+    "techniques": ["heat transfer calculation", "latent heat"]
+  },
+  {
+    "question": "32. An electron in the ground state of the hydrogen atom has the orbital radius of $5.3 \\times 10^{-11} \\mathrm{~m}$ while that for the electron in third excited state is $8.48 \\times 10^{-10} \\mathrm{~m}$. The ratio of the de Broglie wavelengths of electron in the ground state to that in excited state is",
+    "solution": "Ans. (1)\nSol. $\\lambda=\\frac{\\mathrm{h}}{\\mathrm{mv}}$\n$\\mathrm{mvr}=\\frac{\\mathrm{nh}}{2 \\pi}$\n$\\mathrm{mv}=\\frac{\\mathrm{nh}}{2 \\pi \\mathrm{r}}$\n$\\lambda=\\frac{2 \\pi \\mathrm{rh}}{\\mathrm{nh}}$\n$\\lambda \\propto \\frac{\\mathrm{r}}{\\mathrm{n}}$\n$\\frac{\\lambda_{1}}{\\lambda_{4}}=\\frac{\\mathrm{r}_{1} \\mathrm{n}_{4}}{\\mathrm{n}_{1} \\mathrm{r}_{4}}=\\frac{5.3 \\times 10^{-11} \\times 4}{1 \\times 84.8 \\times 10^{-11}}$\n$\\frac{\\lambda_{1}}{\\lambda_{4}}=\\frac{1}{4}$\nNote : Most appropriate answer will be option (1).",
+    "option-1": "4",
+    "option-2": "9",
+    "option-3": "3",
+    "option-4": "16",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "physics",
+    "topic": ["modern physics", "atomic physics", "de broglie wavelength"],
+    "techniques": ["de broglie wavelength formula", "bohr's model"]
+  },
+  {
+    "question": "33. In the diagram given below, there are three lenses formed. Considering negligible thickness of each of them as compared to $\\left[R_{1}\\right]$ and $\\left[R_{2}\\right]$, i.e., the radii of curvature for upper and lower surfaces of the glass lens, the power of the combination is\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-10.jpg?height=298&width=435&top_left_y=1599&top_left_x=336)",
+    "solution": "Ans. (2)\nSol.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-10.jpg?height=432&width=612&top_left_y=292&top_left_x=1150)\n$\\Rightarrow \\mathrm{p}_{\\mathrm{eq}}=\\mathrm{p}_{1}+\\mathrm{p}_{2}+\\mathrm{p}_{3}$\n$\\Rightarrow \\mathrm{p}_{1}=\\left(\\frac{4}{3}-1\\right)\\left(\\frac{1}{\\infty}-\\frac{1}{-\\left|\\mathrm{R}_{1}\\right|}\\right)$\n$\\Rightarrow \\mathrm{p}_{1}=\\left(\\frac{1}{3\\left|\\mathrm{R}_{1}\\right|}\\right)$\n$\\Rightarrow \\mathrm{p}_{2}=\\left(\\frac{1}{2}\\right)\\left(\\frac{1}{-\\left|\\mathrm{R}_{1}\\right|}-\\frac{1}{-\\left|\\mathrm{R}_{2}\\right|}\\right)$\n$\\Rightarrow \\mathrm{p}_{2}=\\frac{1}{2}\\left(\\frac{1}{\\left|\\mathrm{R}_{2}\\right|}-\\frac{1}{\\left|\\mathrm{R}_{1}\\right|}\\right)$\n$\\Rightarrow \\mathrm{p}_{3}=\\left(\\frac{1}{3}\\right)\\left(\\frac{1}{-\\left|\\mathrm{R}_{2}\\right|}-\\frac{1}{\\infty}\\right)=-\\frac{1}{3\\left|\\mathrm{R}_{2}\\right|}$\n$\\Rightarrow \\mathrm{p}_{\\mathrm{eq}}=\\frac{1}{3}\\left(\\frac{1}{\\left|\\mathrm{R}_{1}\\right|}-\\frac{1}{\\left|\\mathrm{R}_{2}\\right|}\\right)-\\frac{1}{2}\\left(\\frac{1}{\\left|\\mathrm{R}_{1}\\right|}-\\frac{1}{\\left|\\mathrm{R}_{2}\\right|}\\right)$\n$=-\\frac{1}{6}\\left(\\frac{1}{\\left|\\mathrm{R}_{1}\\right|}-\\frac{1}{\\left|\\mathrm{R}_{2}\\right|}\\right)$",
+    "option-1": "$-\\frac{1}{6}\\left(\\frac{1}{\\left|\\mathrm{R}_{1}\\right|}+\\frac{1}{\\left|\\mathrm{R}_{2}\\right|}\\right)$",
+    "option-2": "$-\\frac{1}{6}\\left(\\frac{1}{\\left|\\mathrm{R}_{1}\\right|}-\\frac{1}{\\left|\\mathrm{R}_{2}\\right|}\\right)$",
+    "option-3": "$\\frac{1}{6}\\left(\\frac{1}{\\left|\\mathrm{R}_{1}\\right|}+\\frac{1}{\\left|\\mathrm{R}_{2}\\right|}\\right)$",
+    "option-4": "$\\frac{1}{6}\\left(\\frac{1}{\\left|\\mathrm{R}_{1}\\right|}-\\frac{1}{\\left|\\mathrm{R}_{2}\\right|}\\right)$",
+    "option-5": null,
+    "correct-option": "2",
+    "subject": "physics",
+    "topic": ["optics", "lenses", "lensmaker's formula"],
+    "techniques": ["lensmaker's formula", "power of lens"]
+  },
+  {
+    "question": "34. An electron is made to enters symmetrically between two parallel and equally but oppositely charged metal plates, each of 10 cm length. The electron emerges out of the field region with a horizontal component of velocity $10^{6} \\mathrm{~m} / \\mathrm{s}$. If the magnitude of the electric between the plates is 9.1 $\\mathrm{V} / \\mathrm{cm}$, then the vertical component of velocity of electron is\n(mass of electron $=9.1 \\times 10^{-31} \\mathrm{~kg}$ and charge of electron $=1.6 \\times 10^{-19} \\mathrm{C}$)",
+    "solution": "Ans. (3)\nSol.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-11.jpg?height=429&width=712&top_left_y=291&top_left_x=221)\n$\\Rightarrow \\mathrm{t}=\\frac{\\ell}{\\mathrm{V}_{\\mathrm{x}}}=\\frac{10 \\times 10^{-2}}{10^{6}}=10^{-7}$\n$\\Rightarrow \\mathrm{V}_{\\mathrm{y}}=\\mathrm{u}_{\\mathrm{y}}+\\mathrm{a}_{\\mathrm{y}} \\mathrm{t}$\n$\\Rightarrow \\mathrm{V}_{\\mathrm{y}}=0+\\frac{\\mathrm{eE}}{\\mathrm{m}} \\times 10^{-7}$\n$\\Rightarrow \\mathrm{V}_{\\mathrm{y}}=\\frac{1.6 \\times 10^{-19}}{9.1 \\times 10^{-31}} \\times 9.1 \\times 10^{-2} \\times 10^{-7}$\n$\\Rightarrow \\mathrm{V}_{\\mathrm{y}}=16 \\times 10^{6}$",
+    "option-1": "$1 \\times 10^{6} \\mathrm{~m} / \\mathrm{s}$",
+    "option-2": "0",
+    "option-3": "$16 \\times 10^{6} \\mathrm{~m} / \\mathrm{s}$",
+    "option-4": "$16 \\times 10^{4} \\mathrm{~m} / \\mathrm{s}$",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "physics",
+    "topic": ["electricity and magnetism", "electric field", "motion of charged particles"],
+    "techniques": ["kinematics", "electric force"]
+  },
+  {
+    "question": "35. Which of the following resistivity ($\\rho$ ) $\\mathrm{v} / \\mathrm{s}$ temperature ( T ) curves is most suitable to be used in wire bound standard resistors?",
+    "solution": "Ans. (1)\nSol. Resistivity is independent of temperature for wire bound resistors",
+    "option-1": null,
+    "option-2": null,
+    "option-3": null,
+    "option-4": null,
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "physics",
+    "topic": ["current electricity", "resistance and resistivity", "temperature dependence"],
+    "techniques": ["property of materials"]
+  },
+  {
+    "question": "36. A closed organ and an open organ tube filled by two different gases having same bulk modulus but different densities $\\rho_{1}$ and $\\rho_{2}$ respectively. The frequency of $9^{\\text {th }}$ harmonic of closed tube is identical with $4^{\\text {th }}$ harmonic of open tube. If the length of the closed tube is 10 cm and the density ratio of the gases is $\\rho_{1}: \\rho_{2}=1: 16$, then the length of the open tube is :",
+    "solution": "Ans. (3)\nSol. $9^{\\text {th }}$ harmonic of closed pipe $=\\frac{9 \\mathrm{~V}_{1}}{4 \\ell_{1}}$\n$4^{\\text {th }}$ harmonic of open pipe $=\\frac{2 \\mathrm{~V}_{2}}{\\ell_{2}}$\n$\\therefore \\frac{9 \\mathrm{~V}_{1}}{4 \\ell_{1}}=\\frac{2 \\mathrm{~V}_{2}}{\\ell_{2}}$\n$\\therefore \\frac{9}{4 \\ell_{1}} \\sqrt{\\frac{\\mathrm{~B}}{\\rho_{1}}}=\\frac{2}{\\ell_{2}} \\sqrt{\\frac{\\mathrm{~B}}{\\rho_{2}}} \\Rightarrow \\frac{\\ell_{2}}{\\ell_{1}}=\\frac{8}{9} \\sqrt{\\frac{\\rho_{1}}{\\rho_{2}}}$\n$\\ell_{2}=\\ell_{1} \\times \\frac{8}{9} \\times \\frac{1}{4}=\\frac{20}{9} \\mathrm{~cm}$",
+    "option-1": "$\\frac{20}{7} \\mathrm{~cm}$",
+    "option-2": "$\\frac{15}{7} \\mathrm{~cm}$",
+    "option-3": "$\\frac{20}{9} \\mathrm{~cm}$",
+    "option-4": "$\\frac{15}{9} \\mathrm{~cm}$",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "physics",
+    "topic": ["waves", "sound waves", "organ pipes"],
+    "techniques": ["harmonic frequency formula", "speed of sound"]
+  },
+  {
+    "question": "37. A uniform circular disc of radius ' $R$ ' and mass ' M ' is rotating about an axis perpendicular to its plane and passing through its centre. A small circular part of radius $\\mathrm{R} / 2$ is removed from the original disc as shown in the figure. Find the moment of inertia of the remaining part of the original disc about the axis as given above.\n![](https://cdn.mathpix.com/cropped/2025_03_17_8b59f10a8c2f02cf406fg-11.jpg?height=178&width=184&top_left_y=2173&top_left_x=1407)",
+    "solution": "Ans. (4)\nSol. $I=\\frac{M R^{2}}{2}-\\left[\\frac{\\frac{M}{4}\\left(\\frac{R}{2}\\right)^{2}}{2}+\\frac{M}{4}\\left(\\frac{R}{2}\\right)^{2}\\right]$\n$\\mathrm{I}=\\frac{13}{32} \\mathrm{MR}^{2}$",
+    "option-1": "$\\frac{7}{32} \\mathrm{MR}^{2}$",
+    "option-2": "$\\frac{9}{32} \\mathrm{MR}^{2}$",
+    "option-3": "$\\frac{17}{32} \\mathrm{MR}^{2}$",
+    "option-4": "$\\frac{13}{32} \\mathrm{MR}^{2}$",
+    "option-5": null,
+    "correct-option": "4",
+    "subject": "physics",
+    "topic": ["mechanics", "rotational motion", "moment of inertia"],
+    "techniques": ["moment of inertia formula", "superposition principle"]
+  }
+]
+``````json
+[
+  {
+    "question": "51. A solution of aluminium chloride is electrolysed for 30 minutes using a current of 2 A . The amount of the aluminium deposited at the cathode is $\qquad$ _. \n[Given : molar mass of aluminium and chlorine are $27 \mathrm{~g} \mathrm{~mol}^{-1}$ and $35.5 \mathrm{~g} \mathrm{~mol}^{-1}$ respectively, Faraday constant $\left.=96500 \mathrm{C} \mathrm{mol}^{-1}\right]$.\n(1) 1.660 g\n(2) 1.007 g\n(3) 0.336 g\n(4) 0.441 g",
+    "solution": "Sol. gm equivalent of Al deposited $=\\frac{\\mathrm{It}}{96500}$\n$\\frac{\\mathrm{w}}{27} \\times 3=\\frac{2 \\times 30 \\times 60}{96500}$\n$\\mathrm{w}=0.336 \\mathrm{~g}$,",
+    "option-1": "1.660 g",
+    "option-2": "1.007 g",
+    "option-3": "0.336 g",
+    "option-4": "0.441 g",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "chemistry",
+    "topic": [
+      "electrochemistry"
+    ],
+    "techniques": [
+      "Faraday's laws of electrolysis"
+    ]
+  },
+  {
+    "question": "52. Which of the following statement is not true for radioactive decay?\n(1) Amount of radioactive substance remained after three half lives is $\\frac{1}{8}$ th of original amount.\n(2) Decay constant does not depend upon temperature.\n(3) Decay constant increases with increase in temperature.\n(4) Half life is $\\ln 2$ times of $\\frac{1}{\\text { rate constant }}$.",
+    "solution": "Sol. Decay constant is independent of temperature.",
+    "option-1": "Amount of radioactive substance remained after three half lives is $\\frac{1}{8}$ th of original amount.",
+    "option-2": "Decay constant does not depend upon temperature.",
+    "option-3": "Decay constant increases with increase in temperature.",
+    "option-4": "Half life is $\\ln 2$ times of $\\frac{1}{\\text { rate constant }}$",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "chemistry",
+    "topic": [
+      "nuclear chemistry",
+      "radioactivity"
+    ],
+    "techniques": [
+      "radioactive decay laws"
+    ]
+  },
+  {
+    "question": "53. How many different stereoisomers are possible for the given molecule?\n<img class=\"imgSvg\" id = \"m8dgz0ckweaulw2jfmc\" src=\"data:image/svg+xml;base64,PHN2ZyBpZD0ic21pbGVzLW04ZGd6MGNrd2VhdWx3MmpmbWMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE5MyA4OS4yNTAwNTUwOTQ2OTE1IiBzdHlsZT0id2lkdGg6IDE5My4xMTkyMDA4NzY4MTQ1NXB4OyBoZWlnaHQ6IDg5LjI1MDA1NTA5NDY5MTVweDsgb3ZlcmZsb3c6IHZpc2libGU7Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmUtbThkZ3owY2t3ZWF1bHcyamZtYy0xIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjEyMy44Mzk0MTEyNjA1OTEyOSIgeTE9IjUyLjUwMDAzNjcyOTc5NDM0IiB4Mj0iMTUxLjExOTIwMDg3NjgxNDU1IiB5Mj0iNjguMjUwMDU1MDk0NjkxNSI+PHN0b3Agc3RvcC1jb2xvcj0iY3VycmVudENvbG9yIiBvZmZzZXQ9IjIwJSI+PC9zdG9wPjxzdG9wIHN0b3AtY29sb3I9ImN1cnJlbnRDb2xvciIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmUtbThkZ3owY2t3ZWF1bHcyamZtYy0zIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjEwMi4xMjI1NzgyMTQ5NDI5IiB5MT0iNzEuNTg1Mzg2MTQ5MzczNTkiIHgyPSIxMjMuOTQ2NDI2ODcyNjkwMTEiIHkyPSI1OC45ODU0MDA4NDEyOTcwMyI+PHN0b3Agc3RvcC1jb2xvcj0iY3VycmVudENvbG9yIiBvZmZzZXQ9IjIwJSI+PC9zdG9wPjxzdG9wIHN0b3AtY29sb3I9ImN1cnJlbnRDb2xvciIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmUtbThkZ3owY2t3ZWF1bHcyamZtYy01IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9Ijk2LjU1OTYwMDQzODQwNzI3IiB5MT0iNjguMjUwMDE4MzY0ODkwMDIiIHgyPSIxMjMuODM5NDExMjYwNTkxMjkiIHkyPSI1Mi41MDAwMzY3Mjk3OTQzNCI+PHN0b3Agc3RvcC1jb2xvcj0iY3VycmVudENvbG9yIiBvZmZzZXQ9IjIwJSI+PC9zdG9wPjxzdG9wIHN0b3AtY29sb3I9ImN1cnJlbnRDb2xvciIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImxpbmUtbThkZ3owY2t3ZWF1bHcyamZtYy03IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjY5LjI3OTgxMDgyMjE4NDAyIiB5MT0iNTIuNDk5OTk5OTk5OTkyODYiIHgyPSI5Ni41NTk2MDA0Mzg0MDcyNyIgeTI9IjY4LjI1MDAxODM2NDg5MDAyIj48c3RvcCBzdG9wLWNvbG9yPSJjdXJyZW50Q29sb3IiIG9mZnNldD0iMjAlIj48L3N0b3A+PHN0b3Agc3RvcC1jb2xvcj0iY3VycmVudENvbG9yIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZS1tOGRnejBja3dlYXVsdzJqZm1jLTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNDIiIHkxPSI2OC4yNDk5ODE2MzUwODg1NSIgeDI9IjY5LjI3OTgxMDgyMjE4NDAyIiB5Mj0iNTIuNDk5OTk5OTk5OTkyODYiPjxzdG9wIHN0b3AtY29sb3I9ImN1cnJlbnRDb2xvciIgb2Zmc2V0PSIyMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJjdXJyZW50Q29sb3IiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJsaW5lLW04ZGd6MGNrd2VhdWx3MmpmbWMtMTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNjkuMjc5ODEwODIyMTg0MDIiIHkxPSI1Mi40OTk5OTk5OTk5OTI4NiIgeDI9IjY5LjI3OTgzMjAyODE0NDc4IiB5Mj0iMjEiPjxzdG9wIHN0b3AtY29sb3I9ImN1cnJlbnRDb2xvciIgb2Zmc2V0PSIyMCUiPjwvc3RvcD48c3RvcCBzdG9wLWNvbG9yPSJjdXJyZW50Q29sb3IiIG9mZnNldD0iMTAwJSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxtYXNrIGlkPSJ0ZXh0LW1hc2stbThkZ3owY2t3ZWF1bHcyamZtYyI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0id2hpdGUiPjwvcmVjdD48Y2lyY2xlIGN4PSI2OS4yNzk4MzIwMjgxNDQ3OCIgY3k9IjIxIiByPSI3Ljg3NSIgZmlsbD0iYmxhY2siPjwvY2lyY2xlPjwvbWFzay48c3R5bGU+CiAgICAgICAgICAgICAgICAuZWxlbWVudC1tOGRnejBja3dlYXVsdzJqZm1jIHsKICAgICAgICAgICAgICAgICAgICBmb250OiAxNHB4IEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWY7CiAgICAgICAgICAgICAgICAgICAgYWxpZ25tZW50LWJhc2VsaW5lOiAnbWlkZGxlJzsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIC5zdWItbThkZ3owY2t3ZWF1bHcyamZtYyB7CiAgICAgICAgICAgICAgICAgICAgZm9udDogOC40cHggSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZjsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgPC9zdHlsZT48ZyBtYXNrPSJ1cmwoI3RleHQtbWFzay1tOGRnejBja3dlYXVsdzJqZm1jKSI+PGxpbmUgeDE9IjEyMy44Mzk0MTEyNjA1OTEyOSIgeTE9IjUyLjUwMDAzNjcyOTc5NDM0IiB4Mj0iMTUxLjExOTIwMDg3NjgxNDU1IiB5Mj0iNjguMjUwMDU1MDk0NjkxNSIgc3R5bGU9InN0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utd2lkdGg6MS4yNiIgc3Ryb2tlPSJ1cmwoJyNsaW5lLW04ZGd6MGNrd2VhdWx3MmpmbWMtMScpIj48L2xpbmU+PGxpbmUgeDE9IjEwMi4xMjI1NzgyMTQ5NDI5IiB5MT0iNzEuNTg1Mzg2MTQ5MzczNTkiIHgyPSIxMjMuOTQ2NDI2ODcyNjkwMTEiIHkyPSI1OC45ODU0MDA4NDEyOTcwMyIgc3R5bGU9InN0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utd2lkdGg6MS4yNiIgc3Ryb2tlPSJ1cmwoJyNsaW5lLW04ZGd6MGNrd2VhdWx3MmpmbWMtMycpIj48L2xpbmU+PGxpbmUgeDE9Ijk2LjU1OTYwMDQzODQwNzI3IiB5MT0iNjguMjUwMDE4MzY0ODkwMDIiIHgyPSIxMjMuODM5NDExMjYwNTkxMjkiIHkyPSI1Mi41MDAwMzY3Mjk3OTQzNCIgc3R5bGU9InN0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utd2lkdGg6MS4yNiIgc3Ryb2tlPSJ1cmwoJyNsaW5lLW04ZGd6MGNrd2VhdWx3MmpmbWMtNScpIj48L2xpbmU+PGxpbmUgeDE9IjY5LjI3OTgxMDgyMjE4NDAyIiB5MT0iNTIuNDk5OTk5OTk5OTkyODYiIHgyPSI5Ni41NTk2MDA0Mzg0MDcyNyIgeTI9IjY4LjI1MDAxODM2NDg5MDAyIiBzdHlsZT0ic3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS13aWR0aDoxLjI2IiBzdHJva2U9InVybCgnI2xpbmUtbThkZ3owY2t3ZWF1bHcyamZtYy03JykiPjwvbGluZT48bGluZSB4MT0iNDIiIHkxPSI2OC4yNDk5ODE2MzUwODg1NSIgeDI9IjY5LjI3OTgxMDgyMjE4NDAyIiB5Mj0iNTIuNDk5OTk5OTk5OTkyODYiIHN0eWxlPSJzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLXdpZHRoOjEuMjYiIHN0cm9rZT0idXJsKCcjbGluZS1tOGRnejBja3dlYXVsdzJqZm1jLTknKSI+PC9saW5lPjxsaW5lIHgxPSI2OS4yNzk4MTA4MjIxODQwMiIgeTE9IjUyLjQ5OTk5OTk5OTk5Mjg2IiB4Mj0iNjkuMjc5ODMyMDI4MTQ0NzgiIHkyPSIyMSIgc3R5bGU9InN0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utd2lkdGg6MS4yNiIgc3Ryb2tlPSJ1cmwoJyNsaW5lLW04ZGd6MGNrd2VhdWx3MmpmbWMtMTEnKSI+PC9saW5lPjwvZz48Zz48dGV4dCB4PSIxNTEuMTE5MjAwODc2ODE0NTUiIHk9IjY4LjI1MDA1NTA5NDY5MTUiIGNsYXNzPSJkZWJ1ZyIgZmlsbD0iI2ZmMDAwMCIgc3R5bGU9IgogICAgICAgICAgICAgICAgZm9udDogNXB4IERyb2lkIFNhbnMsIHNhbnMtc2VyaWY7CiAgICAgICAgICAgICI+PC90ZXh0Pjx0ZXh0IHg9IjEyMy44Mzk0MTEyNjA1OTEyOSIgeT0iNTIuNTAwMDM2NzI5Nzk0MzQiIGNsYXNzPSJkZWJ1ZyIgZmlsbD0iI2ZmMDAwMCIgc3R5bGU9IgogICAgICAgICAgICAgICAgZm9udDogNXB4IERyb2lkIFNhbnMsIHNhbnMtc2VyaWY7CiAgICAgICAgICAgICI+PC90ZXh0Pjx0ZXh0IHg9Ijk2LjU1OTYwMDQzODQwNzI3IiB5PSI2OC4yNTAwMTgzNjQ4OTAwMiIgY2xhc3M9ImRlYnVnIiBmaWxsPSIjZmYwMDAwIiBzdHlsZT0iCiAgICAgICAgICAgICAgICBmb250OiA1cHggRHJvaWQgU2Fucywgc2Fucy1zZXJpZjsKICAgICAgICAgICAgIj48L3RleHQ+PHRleHQgeD0iNjkuMjc5ODEwODIyMTg0MDIiIHk9IjUyLjQ5OTk5OTk5OTk5Mjg2IiBjbGFzcz0iZGVidWciIGZpbGw9IiNmZjAwMDAiIHN0eWxlPSIKICAgICAgICAgICAgICAgIGZvbnQ6IDVweCBEcm9pZCBTYW5zLCBzYW5zLXNlcmlmOwogICAgICAgICAgICAiPjwvdGV4dD48dGV4dCB4PSI0MiIgeT0iNjguMjQ5OTgxNjM1MDg4NTUiIGNsYXNzPSJkZWJ1ZyIgZmlsbD0iI2ZmMDAwMCIgc3R5bGU9IgogICAgICAgICAgICAgICAgZm9udDogNXB4IERyb2lkIFNhbnMsIHNhbnMtc2VyaWY7CiAgICAgICAgICAgICI+PC90ZXh0Pjx0ZXh0IHg9IjY0LjAyOTgzMjAyODE0NDc4IiB5PSIyNi4yNSIgY2xhc3M9ImVsZW1lbnQtbThkZ3owY2t3ZWF1bHcyamZtYyIgZmlsbD0iY3VycmVudENvbG9yIiBzdHlsZT0iCiAgICAgICAgICAgICAgICB0ZXh0LWFuY2hvcjogc3RhcnQ7CiAgICAgICAgICAgICAgICB3cml0aW5nLW1vZGU6IGhvcml6b250YWwtdGI7CiAgICAgICAgICAgICAgICB0ZXh0LW9yaWVudGF0aW9uOiBtaXhlZDsKICAgICAgICAgICAgICAgIGxldHRlci1zcGFjaW5nOiBub3JtYWw7CiAgICAgICAgICAgICAgICBkaXJlY3Rpb246IGx0cjsKICAgICAgICAgICAgIj48dHNwYW4+TzwvdHNwYW4+PHRzcGFuIHN0eWxlPSJ1bmljb2RlLWJpZGk6IHBsYWludGV4dDsiPkg8L3RzcGFuPjwvdGV4dD48dGV4dCB4PSI2OS4yNzk4MzIwMjgxNDQ3OCIgeT0iMjEiIGNsYXNzPSJkZWJ1ZyIgZmlsbD0iI2ZmMDAwMCIgc3R5bGU9IgogICAgICAgICAgICAgICAgZm9udDogNXB4IERyb2lkIFNhbnMsIHNhbnMtc2VyaWY7CiAgICAgICAgICAgICI+PC90ZXh0PjwvZz48L3N2Zz4="/>",
+    "solution": "Sol. $\\mathrm{CH}_{3}-\\mathrm{CH}-\\mathrm{CH}=\\mathrm{CH}-\\mathrm{CH}_{3}$\nIt has 4 stereoisomers $\\left[\\begin{array}{ll}R \\text { cis } & R \\text { trans } \\text { Scis } & \\text { Strans }\\end{array}\\right]$",
+    "option-1": "3",
+    "option-2": "1",
+    "option-3": "2",
+    "option-4": "4",
+    "option-5": null,
+    "correct-option": "4",
+    "subject": "chemistry",
+    "topic": [
+      "isomerism"
+    ],
+    "techniques": [
+      "stereoisomers"
+    ]
+  },
+  {
+    "question": "54. Which of the following electronegativity order is incorrect?\n(1) $\\mathrm{Al}  <  \\mathrm{Mg}  <  \\mathrm{B}  <  \\mathrm{N}$\n(2) $\\mathrm{Al}  <  \\mathrm{Si}  <  \\mathrm{C}  <  \\mathrm{N}$\n(3) $\\mathrm{Mg}  <  \\mathrm{Be}  <  \\mathrm{B}  <  \\mathrm{N}$\n(4) S < Cl < O < F",
+    "solution": "Sol.\n|  | Li | Be | B | C | N | O |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| (E.N.) $=$ | 1 | 1.5 | 2 | 2.5 | 3 | 3.5 |\n| 4.0 |  |  |  |  |  |  | On\npauling\nscale\n$\\mathrm{Na} \\quad \\mathrm{Mg} \\quad \\mathrm{Al} \\quad \\mathrm{Si} \\quad \\mathrm{P} \\quad \\mathrm{S} \\quad \\mathrm{Cl}$\n$(\\mathrm{E} . \\mathrm{N} .)=\\begin{array}{lllllll}0.9 & 1.2 & 1.5 & 1.8 & 2.1 & 2.5 & 3.0\\end{array}$\nCorrect order $\\mathrm{Mg}  <  \\mathrm{Al}  <  \\mathrm{B}  <  \\mathrm{N}$",
+    "option-1": "$\\mathrm{Al}  <  \\mathrm{Mg}  <  \\mathrm{B}  <  \\mathrm{N}$",
+    "option-2": "$\\mathrm{Al}  <  \\mathrm{Si}  <  \\mathrm{C}  <  \\mathrm{N}$",
+    "option-3": "$\\mathrm{Mg}  <  \\mathrm{Be}  <  \\mathrm{B}  <  \\mathrm{N}$",
+    "option-4": "S < Cl < O < F",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "chemistry",
+    "topic": [
+      "chemical bonding"
+    ],
+    "techniques": [
+      "electronegativity trends"
+    ]
+  },
+  {
+    "question": "55. Lanthanoid ions with $4 f^{7}$ configuration are :\n(A) $\\mathrm{Eu}^{2+}$\n(B) $\\mathrm{Gd}^{3+}$\n(C) $\\mathrm{Eu}^{3+}$\n(D) $\\mathrm{Tb}^{3+}$\n(E) $\\mathrm{Sm}^{2+}$\n\nChoose the correct answer from the options given below:\n(1) (A) and (B) only\n(2) (A) and (D) only\n(3) (B) and (E) only\n(4) (B) and (C) only",
+    "solution": "Sol. $_{63} \\mathrm{Eu}^{2+}-[\\mathrm{Xe}] 4 f^{7} 6 \\mathrm{~s}^{0}$\n$_{64} \\mathrm{Gd}^{3+}-[\\mathrm{Xe}] 4 \\mathrm{f}^{7} 5 \\mathrm{~d}^{0} 6 \\mathrm{~s}^{0}$\n$_{63} \\mathrm{Eu}^{3+}-[\\mathrm{Xe}] 4 \\mathrm{f}^{6} 6 \\mathrm{~s}^{0}$\n$_{65} \\mathrm{Tb}^{3+}-[\\mathrm{Xe}] 4 \\mathrm{f}^{8} 6 \\mathrm{~s}^{0}$\n$_{62} \\mathrm{Sm}^{2+}-[\\mathrm{Xe}] 4 \\mathrm{f}^{6} 6 \\mathrm{~s}^{0}$\n$\\mathrm{Eu}^{2+} \\& \\mathrm{Gd}^{3+}$",
+    "option-1": "(A) and (B) only",
+    "option-2": "(A) and (D) only",
+    "option-3": "(B) and (E) only",
+    "option-4": "(B) and (C) only",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "chemistry",
+    "topic": [
+      "d and f block elements"
+    ],
+    "techniques": [
+      "electronic configuration"
+    ]
+  },
+  {
+    "question": "56. Match List-I with List-II\n\n| List-I |  | List-II |  |\n| :---: | :---: | :---: | :---: |\n| (A) | $\\mathrm{Al}^{3+}<\\mathrm{Mg}^{2+}<\\mathrm{Na}^{+}<\\mathrm{F}^{-}$ | (I) | Ionisation <br> Enthalpy |\n| (B) | $\\mathrm{B}<\\mathrm{C}<\\mathrm{O}<\\mathrm{N}$ | (II) | Metallic <br> character |\n| (C) | $\\mathrm{B}<\\mathrm{Al}<\\mathrm{Mg}<\\mathrm{K}$ | (III) | Electronegativity |\n| (D) | $\\mathrm{Si}<\\mathrm{P}<\\mathrm{S}<\\mathrm{Cl}$ | (IV) | Ionic radii |\n\nChoose the correct answer from the options given below :\n(1) A-IV, B-I, C-III, D-II\n(2) A-II, B-III, C-IV, D-I\n(3) A-IV, B-I, C-II, D-III\n(4) A-III, B-IV, C-II, D-I",
+    "solution": "Sol. Ionic radii $-\\mathrm{Al}^{3+}<\\mathrm{Mg}^{2+}<\\mathrm{Na}^{+}<\\mathrm{F}^{-}$\nIonisation energy $-\\mathrm{B}<\\mathrm{C}<\\mathrm{O}<\\mathrm{N}$\nMetallic character $-\\mathrm{B}<\\mathrm{Al}<\\mathrm{Mg}<\\mathrm{K}$\nElectron negativity $-\\mathrm{Si}<\\mathrm{P}<\\mathrm{S}<\\mathrm{Cl}$",
+    "option-1": "A-IV, B-I, C-III, D-II",
+    "option-2": "A-II, B-III, C-IV, D-I",
+    "option-3": "A-IV, B-I, C-II, D-III",
+    "option-4": "A-III, B-IV, C-II, D-I",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "chemistry",
+    "topic": [
+      "periodic table"
+    ],
+    "techniques": [
+      "periodic trends"
+    ]
+  },
+  {
+    "question": "57. Which of the following acids is a vitamin?\n(1) Adipic acid\n(2) Aspartic acid\n(3) Ascorbic acid\n(4) Saccharic acid",
+    "solution": "Sol. Vitamin-C is Ascorbic acid.",
+    "option-1": "Adipic acid",
+    "option-2": "Aspartic acid",
+    "option-3": "Ascorbic acid",
+    "option-4": "Saccharic acid",
+    "option-5": null,
+    "correct-option": "3",
+    "subject": "chemistry",
+    "topic": [
+      "biomolecules"
+    ],
+    "techniques": [
+      "vitamins"
+    ]
+  },
+  {
+    "question": "58. A liquid when kept inside a thermally insulated closed vessel at $25^{\\circ} \\mathrm{C}$ was mechanically stirred from outside. What will be the correct option for the following thermodynamic parameters?\n(1) $\\Delta \\mathrm{U}>0, \\mathrm{q}=0, \\mathrm{w}>0$\n(2) $\\Delta U=0, q=0, w=0$\n(3) $\\Delta \\mathrm{U}<0, \\mathrm{q}=0, \\mathrm{w}>0$\n(4) $\\Delta U=0, q<0, w>0$",
+    "solution": "Sol. Thermally insulated $\\Rightarrow \\mathrm{q}=0$\nfrom I $^{\\text {st }}$ law\n$\\Delta \\mathrm{U}=\\mathrm{q}+\\mathrm{w}$\n$\\Delta \\mathrm{U}=\\mathrm{w}$\n$\\mathrm{w}>0, \\Delta \\mathrm{U}>0$",
+    "option-1": "$\\Delta \\mathrm{U}>0, \\mathrm{q}=0, \\mathrm{w}>0$",
+    "option-2": "$\\Delta U=0, q=0, w=0$",
+    "option-3": "$\\Delta \\mathrm{U}<0, \\mathrm{q}=0, \\mathrm{w}>0$",
+    "option-4": "$\\Delta U=0, q<0, w>0$",
+    "option-5": null,
+    "correct-option": "1",
+    "subject": "chemistry",
+    "topic": [
+      "thermodynamics"
+    ],
+    "techniques": [
+      "first law of thermodynamics"
+    ]
+  },
+  {
+    "question": "59. Radius of the first excited state of Helium ion is given as :\n$\\mathrm{a}_{0} \\rightarrow$ radius of first stationary state of hydrogen atom.\n(1) $r=\\frac{a_{0}}{2}$\n(2) $r=\\frac{a_{0}}{4}$\n(3) $r=4 a_{0}$\n(4) $r=2 a_{0}$",
+    "solution": "Sol. $\\mathrm{r}=\\mathrm{a}_{0} \\frac{\\mathrm{n}^{2}}{\\mathrm{Z}}=\\mathrm{a}_{0} \\cdot \\frac{(2)^{2}}{2}=2 \\mathrm{a}_{0}$.",
+    "option-1": "$r=\\frac{a_{0}}{2}$",
+    "option-2": "$r=\\frac{a_{0}}{4}$",
+    "option-3": "$r=4 a_{0}$",
+    "option-4": "$r=2 a_{0}$",
+    "option-5": null,
+    "correct-option": "4",
+    "subject": "chemistry",
+    "topic": [
+      "atomic structure"
+    ],
+    "techniques": [
+      "bohr model"
+    ]
+  },
+  {
+    "question": "60. Given below are two statements :\n\nStatement I : $\\mathrm{CH}_{3}-\\mathrm{O}-\\mathrm{CH}_{2}-\\mathrm{Cl}$ will undergo $\\mathrm{S}_{\\mathrm{N}} 1$ reaction though it is a primary halide.\n\nStatement II :\n<img class=\"imgSvg\" id = \"m8dgz0crealbnbxem89\" src=\"data:image/svg+xml;base64,PHN2ZyBpZD0ic21pbGVzLW04ZGd6MGNyZWFsYm5ieGVtODkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE2NiA4NS4wMjk4MjkxODcwODExOSIgc3R5bGU9IndpZHRoOiAxNjUuODM5MzkwMDU0NjMwNTRweDs
