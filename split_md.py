@@ -36,7 +36,6 @@ def get_all_questions(file) -> list[str]:
                 or line.find("PHYSICS") >= 1
                 or line.find("CHEMISTRY") >= 1
             ):
-                start = 1
                 res.append("")
             elif line.startswith(str(start + 10) + ". "):
                 res.append("")
