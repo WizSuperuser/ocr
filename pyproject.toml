@@ -5,5 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "google-genai>=1.7.0",
+    "instructor[vertexai]>=1.5.2",
+    "langchain-google-vertexai>=1.0.8",
+    "pydantic>=2.10.6",
     "vertexai>=1.71.1",
 ]
