@@ -3,6 +3,7 @@ import json
 from typing import Literal
 
 import instructor
+from collections import deque
 from pydantic import BaseModel, Field
 from vertexai.generative_models import GenerativeModel
 
@@ -75,68 +76,107 @@ For example, on a math question about derivates, the output should look like:
 }
 
 If there is no such question-answer pair in the file, return a single json entry with null values.
-Do not remove any links and images in the text.
+Do not remove any '<img-placeholder>', links and images in the text, just put them in as is.
 """
 
+queue_of_images = deque()
+
+img_pattern = re.compile(r"<img class=.*/>")
+cdn_pattern = re.compile(r"!\[\]\(https://cdn.mathpix.com/.*\)")
 
 def get_all_questions(file: str) -> list[str]:
     res: list[str] = [""]
     pattern = re.compile(r"^\d+. ")
-    banner_image = re.compile(r".*height=3[3-4][0-9]&width=17[8-9][0-9]&top_left_y=22[4-5][0-9]&top_left_x=1[4-5][0-9]\)$")
+    banner_pattern = re.compile(r".*height=3[3-4][0-9]&width=17[8-9][0-9]&top_left_y=22[4-5][0-9]&top_left_x=1[4-5][0-9]\)$")
     with open(file, "r") as f:
         for line in f:
-            if banner_image.match(line):
+            if banner_pattern.match(line):
                 continue
+            if image := img_pattern.findall(line):
+                queue_of_images.extend(image)
+                line = img_pattern.sub("<img-placeholder>", line)
+            if cdn := cdn_pattern.findall(line):
+                queue_of_images.extend(cdn)
+                line = cdn_pattern.sub("<img-placeholder>", line)
             if pattern.match(line):
                 res.append("")
             res[-1] += line
     return res[1:]
 
 
-test = get_all_questions("allen-jan-2024.md")
+test = get_all_questions("allen-jan-part-1.md")
 print(len(test))
-print(test[6])
-# print(test[2])
-# with open("all_questions.md", "w") as f:
-#     f.write("\n".join(test))
+print(len(queue_of_images))
+print(test[30])
+with open("all_questions.md", "w") as f:
+    f.write("\n".join(test))
+
 
 
 tagged_output: list[Question] = []
 i = 0
-for questions in get_all_questions("allen-jan-2024.md")[6:7]:
-    response = ins_client.create(
-        messages=[
-            {
-                "role": "user",
-                "content": questions,
-            },
-            {
-                "role": "user",
-                "content": prompt,
-            }
-        ],
-        response_model=Question,
-    )
-    i += 1
-    if response.question == "":
-        print(f"{i}: discarded")
-        continue
-    tagged_output.append(response)
-    print(f"{i}: tagged")
+for questions in get_all_questions("allen-jan-part-1.md"):
+    try:
+        response = ins_client.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": questions,
+                },
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+            response_model=Question,
+        )
+        i += 1
+        if response.question == "":
+            print(f"{i}: discarded")
+            continue
+        tagged_output.append(response)
+        print(f"{i}: tagged")
+    except Exception as e:
+        print(f"{i}: got exception")
 
 # print(tagged_output)
 print("")
 print("======================")
 print("")
 
-with open("test_questions.json", "w") as f:
+
+placeholder_pattern = re.compile(r"<img-placeholder>")
+
+
+with open("allen_image_extracted.json", "w") as f:
     questions_with_extracted_images = [question.model_dump() for question in tagged_output]
     for question in questions_with_extracted_images:
+        for _ in placeholder_pattern.findall(question["question"]):
+            question["question"] = question["question"].replace("<img-placeholder>", queue_of_images.popleft(), 1)
+        for _ in placeholder_pattern.findall(question["option_1"]):
+            question["option_1"] = question["option_1"].replace("<img-placeholder>", queue_of_images.popleft(), 1)
+        for _ in placeholder_pattern.findall(question["option_2"]):
+            question["option_2"] = question["option_2"].replace("<img-placeholder>", queue_of_images.popleft(), 1)
+        for _ in placeholder_pattern.findall(question["option_3"]):
+            question["option_3"] = question["option_3"].replace("<img-placeholder>", queue_of_images.popleft(), 1)
+        for _ in placeholder_pattern.findall(question["option_4"]):
+            question["option_4"] = question["option_4"].replace("<img-placeholder>", queue_of_images.popleft(), 1)
+        for _ in placeholder_pattern.findall(question["option_5"]):
+            question["option_5"] = question["option_5"].replace("<img-placeholder>", queue_of_images.popleft(), 1)
+        for _ in placeholder_pattern.findall(question["solution"]):
+            question["solution"] = question["solution"].replace("<img-placeholder>", queue_of_images.popleft(), 1)
+
+
+        url_pattern = re.compile(r"https://cdn\.mathpix\.com.*top_left_x=\d+")
         question["images"] = []
-        pattern = re.compile(r"!\[\]\(.*\)")
-        question["images"] += pattern.findall(question["question"])
-        question["images"] += pattern.findall(question["solution"])
-    json_list = json.dumps(questions_with_extracted_images)
+        question["images"] += url_pattern.findall(question["question"])
+        question["images"] += url_pattern.findall(question["option_1"])
+        question["images"] += url_pattern.findall(question["option_2"])
+        question["images"] += url_pattern.findall(question["option_3"])
+        question["images"] += url_pattern.findall(question["option_4"])
+        question["images"] += url_pattern.findall(question["option_5"])
+        question["images"] += url_pattern.findall(question["solution"])
+    json_list = json.dumps(questions_with_extracted_images, indent=2)
     f.write(json_list)
 
 
