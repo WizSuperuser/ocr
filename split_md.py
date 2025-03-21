@@ -38,9 +38,9 @@ class Question(BaseModel):
         ..., description="one of physics, chemistry, math"
     )
     topics: list[str] = Field(
-        ..., description="topics relevant to the question and JEE mains"
+        ..., description="topics relevant to the question and JEE mains, example: derivatives, trignometry"
     )
-    techniques: list[str] = Field(..., description="techniques used to solve the problem")
+    techniques: list[str] = Field(..., description="techniques used to solve the problem, example: chain rule, sine rule")
 
 
 
@@ -55,7 +55,7 @@ You are provided a markdown file above which contains a question and solution to
 from JEE mains. The document may contain rich text with latex equations, tables, chemistry compound diagrams, electric
 circuits, geometry diagrams, and some images specific to the problem. The questions may be mcq type or numerical answer type.
 Your job is to convert the questions-solution pair to the JSON schema below and tag them with the appropriate topic.
-Make sure to include all the rich text including image tags and links if they are part of the questions or solutions.
+Make sure to include all the rich text including image tags and links.
 
 For example, on a math question about derivates, the output should look like:
 {
@@ -73,16 +73,20 @@ For example, on a math question about derivates, the output should look like:
     "topic": ["derivatives", "trignometry"],
     "techniques": ["chain rule", "sine rule"],
 }
+
 If there is no such question-answer pair in the file, return a single json entry with null values.
-Remember to escape any characters required for serialzation to python.
+Do not remove any links and images in the text.
 """
 
 
 def get_all_questions(file: str) -> list[str]:
     res: list[str] = [""]
     pattern = re.compile(r"^\d+. ")
+    banner_image = re.compile(r".*height=3[3-4][0-9]&width=17[8-9][0-9]&top_left_y=22[4-5][0-9]&top_left_x=1[4-5][0-9]\)$")
     with open(file, "r") as f:
         for line in f:
+            if banner_image.match(line):
+                continue
             if pattern.match(line):
                 res.append("")
             res[-1] += line
@@ -91,7 +95,7 @@ def get_all_questions(file: str) -> list[str]:
 
 test = get_all_questions("allen-jan-2024.md")
 print(len(test))
-print(test[7])
+print(test[6])
 # print(test[2])
 # with open("all_questions.md", "w") as f:
 #     f.write("\n".join(test))
@@ -99,7 +103,7 @@ print(test[7])
 
 tagged_output: list[Question] = []
 i = 0
-for questions in get_all_questions("allen-jan-2024.md"):
+for questions in get_all_questions("allen-jan-2024.md")[6:7]:
     response = ins_client.create(
         messages=[
             {
@@ -125,8 +129,14 @@ print("")
 print("======================")
 print("")
 
-with open("tagged_questions.json", "w") as f:
-    json_list = json.dumps([question.model_dump() for question in tagged_output], indent=2)
+with open("test_questions.json", "w") as f:
+    questions_with_extracted_images = [question.model_dump() for question in tagged_output]
+    for question in questions_with_extracted_images:
+        question["images"] = []
+        pattern = re.compile(r"!\[\]\(.*\)")
+        question["images"] += pattern.findall(question["question"])
+        question["images"] += pattern.findall(question["solution"])
+    json_list = json.dumps(questions_with_extracted_images)
     f.write(json_list)
 
 
